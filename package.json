@@ -1,0 +1,15 @@
+{
+  "name": "neoDesk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/pedrocpires/neoDesk.git",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
