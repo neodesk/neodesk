@@ -1,0 +1,24 @@
+<nav id="sideBarClosed">
+  <object
+    id="logo"
+    data="/logo/logo_white_clean.svg"
+    type="image/svg+xml"
+  ></object>
+
+  <button class="closed" onClick="openNavBar()">
+    <i class="closed material-icons md-48 md-light">menu</i>
+  </button>
+  <i class="closed material-icons md-36 md-light">search</i>
+  <i class="closed material-icons md-36 md-light">assignment_turned_in</i>
+  <i class="closed material-icons md-36 md-light">assignment</i>
+
+  <div class="open">
+    <div><a href="#">HOME</a></div>
+    <div><a href="#">CHAMADOS</a></div>
+    <div><a href="#">PERFIL</a></div>
+
+    <div id="logout"><a href="#">LOGOUT</a></div>
+  </div>
+
+  <%- include("open_navbar_script.ejs")%>
+</nav>

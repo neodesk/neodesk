@@ -1,0 +1,13 @@
+<script>
+  window.addEventListener("click", e => {
+    let navBar = document.getElementsByTagName("nav")[0];
+    if (navBar.offsetWidth > 100 && e.offsetX > navBar.offsetWidth) {
+      navBar.setAttribute("id", "sideBarClosed");
+    }
+  });
+
+  function openNavBar() {
+    let navBar = document.getElementsByTagName("nav")[0];
+    navBar.setAttribute("id", "sideBarOpen");
+  }
+</script>

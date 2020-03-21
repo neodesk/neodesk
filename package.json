@@ -5,11 +5,12 @@
   "repository": "https://github.com/pedrocpires/neoDesk.git",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "nodemon src/index.js"
   },
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "install": "^0.13.0",
     "nodemon": "^2.0.2"
   }
 }
