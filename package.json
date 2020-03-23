@@ -1,16 +1,19 @@
 {
-  "name": "neoDesk",
+  "name": "neo_desk",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/pedrocpires/neoDesk.git",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "dev": "nodemon src/server.js"
   },
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1",
-    "install": "^0.13.0",
-    "nodemon": "^2.0.2"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "prettier": "^2.0.1",
+    "sucrase": "^3.12.1"
   }
 }
