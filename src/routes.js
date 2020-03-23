@@ -7,15 +7,19 @@ routes.get('/', (req, res) => {
 })
 
 routes.get('/login', (req, res) => {
-  res.render('login/index')
+  res.render('login')
+})
+
+routes.get('/password_reset', (req, res) => {
+  res.render('password_reset')
 })
 
 routes.get('/user', (req, res) => {
-  res.render('user/index')
+  res.render('user')
 })
 
 routes.get('/operator', (req, res) => {
-  res.render('operator/index')
+  res.render('operator')
 })
 
 export default routes;
