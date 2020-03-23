@@ -18,6 +18,10 @@ app.get('/operator', (req, res) => {
   res.render('operator/index')
 })
 
+app.get('/login', (req, res) => {
+  res.render('login')
+})
+
 app.use(express.static(__dirname + '/public'));
 
 app.listen(3333)
