@@ -6,6 +6,10 @@ routes.get('/', (req, res) => {
   res.render('main')
 })
 
+routes.get('/login', (req, res) => {
+  res.render('login/index')
+})
+
 routes.get('/user', (req, res) => {
   res.render('user/index')
 })

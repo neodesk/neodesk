@@ -1,4 +1,4 @@
-#logo {
+#logo_white {
   width: 50px;
   height: 50px;
 
@@ -15,9 +15,6 @@
 .closed button {
   background: none;
   border: none;
-  cursor: pointer;
-  margin: 0;
-  padding: 0;
 }
 
 .closed i {
@@ -58,10 +55,8 @@
 }
 
 .open a {
-  text-decoration: none;
   color: #fff;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .open {
