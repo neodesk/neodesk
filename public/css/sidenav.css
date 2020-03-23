@@ -6,7 +6,13 @@
   margin-bottom: 20px;
 }
 
-button.closed {
+.closed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.closed button {
   background: none;
   border: none;
   cursor: pointer;
@@ -14,11 +20,11 @@ button.closed {
   padding: 0;
 }
 
-i {
+.closed i {
   margin-top: 10px;
 }
 
-#sideBarClosed {
+.sidenavClosed {
   width: 100px;
   height: 100vh;
   background-color: #273c50;
@@ -28,11 +34,11 @@ i {
   transition: all 1s;
 }
 
-#sideBarClosed .open {
+.sidenavClosed .open {
   display: none;
 }
 
-#sideBarOpen {
+.sidenavOpen {
   position: relative;
   width: 300px;
   height: 100vh;
@@ -43,11 +49,11 @@ i {
   transition: all 1s;
 }
 
-#sideBarOpen .closed {
+.sidenavOpen .closed {
   display: none;
 }
 
-#sideBarOpen div {
+.sidenavOpen div {
   width: 100%;
 }
 

@@ -1,32 +1,37 @@
-<nav id="sideBarClosed">
+<nav id="sidenav" class="sidenavClosed">
   <object
     id="logo"
     data="/logo/logo_white_clean.svg"
     type="image/svg+xml"
   ></object>
 
-  <button class="closed" onClick="openNavBar()">
-    <i class="closed material-icons md-48 md-light">menu</i>
-  </button>
-  <i class="closed material-icons md-36 md-light">search</i>
-  <i class="closed material-icons md-36 md-light">assignment_turned_in</i>
-  <i class="closed material-icons md-36 md-light">assignment</i>
+  <div class="closed">
+    <button onClick="openNavBar()">
+      <i class="material-icons md-48 md-light">menu</i>
+    </button>
 
-  <i class="closed material-icons md-36 md-light">alarm</i>
-  <i class="closed material-icons md-36 md-light">build</i>
-  <i class="closed material-icons md-36 md-light">bug_report</i>
+    <i class="material-icons md-36 md-light">search</i>
+    <i class="material-icons md-36 md-light">assignment_turned_in</i>
+    <i class="material-icons md-36 md-light">assignment</i>
 
-  <i class="closed material-icons md-36 md-light">assessment</i>
-  <i class="closed material-icons md-36 md-light outline">view_week</i>
-  <i class="closed material-icons md-36 md-light">supervised_user_circle</i>
+    <i class="material-icons md-36 md-light">alarm</i>
+    <i class="material-icons md-36 md-light">build</i>
+    <i class="material-icons md-36 md-light">bug_report</i>
+
+    <i class="material-icons md-36 md-light">assessment</i>
+    <i class="material-icons md-36 md-light outline">view_week</i>
+    <i class="material-icons md-36 md-light">supervised_user_circle</i>
+  </div>
 
   <div class="open">
     <div><a href="#">HOME</a></div>
     <div><a href="#">CHAMADOS</a></div>
     <div><a href="#">PERFIL</a></div>
+    <div><a href="#">PREFERENCIAS</a></div>
+    <div><a href="#">CONFIGURACOES</a></div>
 
     <div id="logout"><a href="#">LOGOUT</a></div>
   </div>
 
-  <%- include("../shared/_navbar_script.ejs")%>
+  <script src="/javascript/sidenav.js"></script>
 </nav>
