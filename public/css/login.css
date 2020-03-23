@@ -1,0 +1,72 @@
+#formContainer {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#formContainer form {
+  display: flex;
+  flex-direction: column;
+  background-color: #2397bb;
+  align-items: center;
+  width: 400px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+#formContainer a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+#loginOptions {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#loginOptions a {
+  width: auto;
+  text-align: center;
+}
+
+#loginOptions div {
+  width: 2px;
+  height: 20px;
+  background-color: #0f3744;
+}
+
+#formContainer form object {
+  height: 100px;
+}
+
+#formContainer form input {
+  height: 35px;
+  padding: 5px 15px;
+  width: 100%;
+  margin: 10px 5px;
+}
+
+#formContainer form button {
+  height: 35px;
+  width: 100%;
+  align-self: flex-start;
+  cursor: pointer;
+  background-color: #165568;
+  border: none;
+  color: #fff;
+  transition: all 1s;
+}
+
+#formContainer form button:hover {
+  background-color: #2384a1;
+}
+
+#forgetPass {
+  align-self: flex-end;
+  margin-bottom: 15px;
+}

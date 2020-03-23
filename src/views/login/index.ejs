@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../shared/_head.ejs")%>
+  <body>
+    <div id="formContainer">
+      <form>
+        <object
+          id="logo"
+          data="/logo/logo.svg"
+          type="image/svg+xml"
+        ></object>
+        <div id="loginOptions">
+          <a href="#">Login de Úsuario</a>
+          <div></div>
+          <a href="#">Login de Operador</a>
+        </div>
+        <input type="email" placeholder="LOGIN">
+        <input type="password" name="password" placeholder="SENHA">
+        <a href="#" id="forgetPass">Esqueci minha senha</a>
+        <button>ENTRAR</button>
+      </form>
+    </div>
+  </body>
+</html>
