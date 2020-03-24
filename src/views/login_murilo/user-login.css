@@ -1,0 +1,165 @@
+/* =========================== VARIABLES ========================*/
+:root {
+  /*colors*/
+  --clr-primary: #1c1c4c;
+  --clr-primary-light: #6797ce;
+  /* --clr-grey-1: #102a42;
+    --clr-grey-5: #617d98; */
+  --clr-grey-10: #f1ffe7;
+  --clr-white: #dcdcf3;
+
+  /*fonts*/
+  --ff-primary: "Roboto", sans-serif;
+  /* --ff-secondary: "Grand Hotel", cursive; */
+
+  /**/
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}
+
+/*=======================Global CSS====================================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+main {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #1c1c4c;
+  background-image: url("./background.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  max-width: 480px;
+  width: 95vw;
+}
+
+.btn {
+  text-transform: uppercase;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  padding: 0.375rem 0.75rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 0.925rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #6797ce;
+  border: 1px solid #1c1c4c;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  background-color: var(--clr-grey-10);
+  display: block;
+  padding: 0.75rem 1rem;
+  width: 100%;
+  margin: 1.5rem auto;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  transition: ease 0.2s;
+}
+
+.form-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+}
+
+.form-btn {
+	margin-top: 2rem;
+}
+
+.login-form {
+  /* padding: 1rem 1.5rem; */
+}
+
+.switch a {
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 4px var(--clr-primary);
+  transform: scale(1.015);
+}
+
+.link-operador {
+  padding-top: 1rem;
+  border-top: solid 1px var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.password-recovery {
+  position: relative;
+  bottom: 20px;
+  color: var(--clr-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+}
+
+.password-recovery:hover {
+  font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+  .switch a {
+    display: inline;
+  }
+
+  .link-usuario {
+    padding-right: 0.5rem;
+  }
+
+  .link-operador {
+    padding-left: 1rem;
+    padding-top: 0;
+    border: none;
+    border-left: solid 1px var(--clr-primary);
+  }
+}
