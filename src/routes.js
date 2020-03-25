@@ -10,6 +10,10 @@ routes.get('/login', (req, res) => {
   res.render('login')
 })
 
+routes.get('/login_murilo', (req, res) => {
+  res.render('login_murilo/user-login.html')
+})
+
 routes.get('/password_reset', (req, res) => {
   res.render('password_reset')
 })
