@@ -1,0 +1,18 @@
+:root {
+  /*colors*/
+  --clr-primary: #1c1c4c;
+  --clr-primary-light: #6797ce;
+  /* --clr-grey-1: #102a42;
+    --clr-grey-5: #617d98; */
+  --clr-grey-10: #f1ffe7;
+  --clr-white: #dcdcf3;
+
+  /*fonts*/
+  --ff-primary: "Roboto", sans-serif;
+  /* --ff-secondary: "Grand Hotel", cursive; */
+
+  /**/
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+}

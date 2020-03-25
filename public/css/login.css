@@ -1,77 +1,99 @@
+main {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  max-width: 480px;
+  width: 95vw;
+  background-color: #6797cea2;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
 #logo_login {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-#formContainer {
-  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
-
+.switch {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+
   align-items: center;
-  min-height: 100vh;
-}
+  justify-content: space-between;
 
-#formContainer form {
-  display: flex;
-  flex-direction: column;
-  background-color: #2397bb;
-  align-items: center;
-  width: 400px;
-  border-radius: 15px;
-  padding: 20px;
-}
-
-#formContainer a {
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000;
-}
-
-#loginOptions {
-  display: flex;
   width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
+  margin: 0;
+  margin-top: 0.75rem;
+  font-size: 1.25rem;
 }
 
-#loginOptions a {
-  width: auto;
-  text-align: center;
+#link-operador {
+  color: var(--clr-primary);
 }
 
-#loginOptions div {
-  width: 2px;
-  height: 20px;
-  background-color: #0f3744;
-}
-
-#formContainer form input {
-  height: 35px;
-  padding: 5px 15px;
+.form-control {
+  background-color: var(--clr-grey-10);
+  display: block;
+  padding: 0.75rem 1rem;
   width: 100%;
-  margin: 10px 5px;
-}
-
-#formContainer form button {
-  height: 35px;
-  width: 100%;
-  align-self: flex-start;
-  cursor: pointer;
-  background-color: #165568;
+  margin: 1.5rem auto;
   border: none;
-  color: #fff;
-  transition: all 1s;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  border-radius: var(--radius);
+  transition: ease 0.2s;
 }
 
-#formContainer form button:hover {
-  background-color: #2384a1;
+button#submit_login {
+  text-transform: uppercase;
+  background: var(--clr-primary);
+  color: var(--clr-white);
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  font-size: 0.925rem;
+
+  border: none;
+  border-radius: var(--radius);
+
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  margin-top: 2rem;
 }
 
-#forgetPass {
-  align-self: flex-end;
-  margin-bottom: 15px;
+button#submit_login:hover {
+  color: var(--clr-primary);
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 4px var(--clr-primary);
+  transform: scale(1.015);
+}
+
+.password-recovery {
+  position: relative;
+  bottom: 20px;
+  color: var(--clr-primary);
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  text-align: right;
+}
+
+.password-recovery:hover {
+  font-weight: 700;
 }

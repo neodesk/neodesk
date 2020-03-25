@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include("../shared/_head.ejs", { title: 'Reset de Senha' })%>
+  <%- include("../shared/_head.ejs", { title: 'Login' })%>
 
   <body>
-    <div id="formContainer">
-      <form>
+    <main>
+      <div class="login">
         <object
           id="logo_login"
           data="/logo/logo_white_clean.svg"
           type="image/svg+xml"
         ></object>
 
-        <div id="loginOptions">
-          <a href="#">Login de Úsuario</a>
-          <div></div>
-          <a href="#">Login de Operador</a>
+        <div class="switch">
+          <a href="#" id="link-usuario">Login de usuário</a>
+          |
+          <a href="#" id="link-operador">Login de operador</a>
         </div>
 
-        <input type="email" placeholder="LOGIN" />
-        <input type="password" name="password" placeholder="SENHA" />
+        <form action="" method="POST" class="login-form">
+          <input
+            type="text"
+            id="login"
+            name="login"
+            placeholder="Login"
+            class="form-control"
+            required
+          />
 
-        <a href="#" id="forgetPass">Esqueci minha senha</a>
-        <button>ENTRAR</button>
-      </form>
-    </div>
+          <input
+            type="password"
+            id="senha"
+            name="senha"
+            placeholder="Senha"
+            class="form-control"
+            required
+          />
+
+          <a href="#" class="password-recovery">Esqueci minha senha</a>
+
+          <button type="submit" id="submit_login">Entrar</button>
+        </form>
+      </div>
+    </main>
   </body>
 </html>

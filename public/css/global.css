@@ -29,6 +29,11 @@ button {
 
 a {
   text-decoration: none;
+  color: var(--clr-white);
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 ul {
