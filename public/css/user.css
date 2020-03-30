@@ -1,0 +1,141 @@
+.contentContainer {
+  position: relative;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contentContainer main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+header {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #4f9cc8;
+}
+
+header .profile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  box-shadow: 0 3px 8px -2px #000;
+}
+
+header .searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .searchBar input {
+  width: 600px;
+  height: 100%;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+header .searchBar button {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  padding: 0 5px;
+  transition: background-color 1s;
+}
+
+header .searchBar button:hover {
+  background-color: #e29736;
+}
+
+.pathContainer {
+  height: 36px;
+  margin: 15px 0 0 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pathContainer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 26px;
+  margin-left: 15px;
+  color: #888;
+}
+
+.servicesContainer {
+  margin: 20px 40px 0 40px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  background-color: #ddd;
+  border: 5px solid var(--clr-grey-5);
+  border-radius: 15px;
+  margin: 10px 10px;
+}
+
+.service img {
+  margin: auto;
+}
+
+.service a {
+  text-decoration: none;
+  color: var(--clr-grey-1);
+  text-align: center;
+  margin: auto;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.infoContainer .info .infoTitle {
+  background-color: var(--clr-grey-1);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.infoTitle h3 {
+  color: #ddd;
+  text-align: center;
+}

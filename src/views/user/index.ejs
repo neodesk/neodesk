@@ -4,5 +4,57 @@
 
   <body>
     <%- include("_sidenav.ejs")%>
+    <div class="contentContainer">
+      <%- include("_headbar.ejs")%>
+      <main>
+        <%- include("../shared/_path.ejs")%>
+        <div class="servicesContainer">
+          <section class="services">
+            <div class="service">
+              <img src="service_icons/ti.svg" alt="TI icon">
+              <a href="#">TI</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/rh.svg" alt="TI icon">
+              <a href="#">Recursos Humanos</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/support.svg" alt="TI icon">
+              <a href="#">Suporte</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/my_calls.svg" alt="TI icon">
+              <a href="#">Meus Chamados</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/logistic.svg" alt="TI icon">
+              <a href="#">Logistica</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/maintence.svg" alt="TI icon">
+              <a href="#">Manutencao</a>
+            </div>
+            <div class="service">
+              <img src="service_icons/international.svg" alt="TI icon">
+              <a href="#">International</a>
+            </div>
+          </section>
+          <aside class="infoContainer">
+            <div class="info">
+              <div class="infoTitle">
+                <h3>Problemas generalizados</h3>
+              </div>
+              <div></div>
+            </div>
+            <div class="info">
+              <div class="infoTitle">
+                <h3>Atualizacoes</h3>
+              </div>
+              <div></div>
+            </div>
+          </aside>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

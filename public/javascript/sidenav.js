@@ -1,7 +1,6 @@
 window.addEventListener("click", e => {
   const navBar = document.getElementById("sidenav");
-
-  if (navBar.offsetWidth > 100 && e.offsetX > navBar.offsetWidth)
+  if (navBar.offsetWidth > 100 && e.clientX > navBar.offsetWidth)
     navBar.setAttribute("class", "sidenavClosed");
 });
 
