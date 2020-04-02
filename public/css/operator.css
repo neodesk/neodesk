@@ -1,5 +1,5 @@
 #operatorHeader {
-    height: 80px;
+    height: 50px;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
     align-content: flex-end;
@@ -10,8 +10,14 @@
 
 }
 .operatorAvatar img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     object-fit: cover;
     border-radius: 5px;
+    
+}
+.operatorAvatar{
+    display: flex;
+    align-items: center;
+
 }

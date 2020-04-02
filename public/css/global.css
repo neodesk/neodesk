@@ -36,7 +36,7 @@ header{
 }
 .contentContainer {
   position: relative;
-  margin-left: 100px;
+  margin-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
