@@ -34,6 +34,22 @@ header{
   background-color: #4f9cc8;
 
 }
+
+main {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-left: 100px;
+}
+
 .contentContainer {
   position: relative;
   margin-left: 100px;
@@ -66,4 +82,23 @@ ul {
 
 button {
   cursor: pointer;
+}
+.pathContainer {
+  margin-top: 5px;
+margin-bottom: 10px;
+
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.pathContainer a {
+  font-weight: 200;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #888;
+}
+.pathBar{
+  margin-left: 100px; 
 }
