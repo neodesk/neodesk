@@ -1,0 +1,14 @@
+.pathContainer {
+  height: 36px;
+  margin: 15px 0 0 120px;
+  display: flex;
+  align-items: center;
+}
+
+.pathContainer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 26px;
+  margin-left: 15px;
+  color: #888;
+}

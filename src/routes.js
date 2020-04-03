@@ -18,6 +18,10 @@ routes.get('/user', (req, res) => {
   res.render('user')
 })
 
+routes.get('/user/subcategorie', (req, res) => {
+  res.render('user/subcategorie')
+})
+
 routes.get('/operator', (req, res) => {
   res.render('operator')
 })
