@@ -37,11 +37,11 @@ article p {
   font-size: 18px;
 }
 
-.subCategorieOptions {
+.subCategoryOptions {
   width: 400px;
 }
 
-.subCategorieOptions .option {
+.subCategoryOptions .option {
   height: 50px;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@ article p {
   border-radius: 15px;
 }
 
-.subCategorieOptions p {
+.subCategoryOptions p {
   margin-left: 10px;
   font-size: 18px;
   height: 100%;

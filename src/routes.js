@@ -3,7 +3,7 @@ import { Router } from 'express';
 const routes = new Router();
 
 routes.get('/', (req, res) => {
-  res.render('main')
+  res.render('index')
 })
 
 routes.get('/login', (req, res) => {
@@ -18,8 +18,8 @@ routes.get('/user', (req, res) => {
   res.render('user')
 })
 
-routes.get('/user/subcategorie', (req, res) => {
-  res.render('user/subcategorie')
+routes.get('/user/subcategory', (req, res) => {
+  res.render('user/subcategory')
 })
 
 routes.get('/operator', (req, res) => {
