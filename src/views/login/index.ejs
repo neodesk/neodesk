@@ -1,46 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-  <%- include("../shared/_head.ejs", { title: 'Login' })%>
+<!-- TITLE -->
+<%- contentFor('title') %>
+Login
+<!-- END -->
 
-  <body>
-    <main>
-      <div class="login">
-        <object
-          id="logo_login"
-          data="/logo/logo_white_clean.svg"
-          type="image/svg+xml"
-        ></object>
+<!-- BODY -->
+<%- contentFor('body') %>
+<main>
+  <div class="login">
+    <object
+      id="logo_login"
+      data="/logo/logo_white_clean.svg"
+      type="image/svg+xml"
+    ></object>
 
-        <div class="switch">
-          <a href="#" id="link-usuario">Login de usuário</a>
-          |
-          <a href="#" id="link-operador">Login de operador</a>
-        </div>
+    <div class="switch">
+      <a href="/login" id="link-usuario">Login de usuário</a>
+      |
+      <a href="/login" id="link-operador">Login de operador</a>
+    </div>
 
-        <form action="" method="POST" class="login-form">
-          <input
-            type="text"
-            id="login"
-            name="login"
-            placeholder="Login"
-            class="form-control"
-            required
-          />
+    <br/>
 
-          <input
-            type="password"
-            id="senha"
-            name="senha"
-            placeholder="Senha"
-            class="form-control"
-            required
-          />
+    <form action="" method="POST" class="login-form">
+      <label for="login" class="login_form_label">Login</label>
+      <input
+        type="text"
+        id="login"
+        name="login"
+        placeholder="Usuario ou email"
+        class="form-control"
+        required
+      />
 
-          <a href="#" class="password-recovery">Esqueci minha senha</a>
+      <label for="senha" class="login_form_label">Senha</label>
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Sua senha secreta"
+        class="form-control"
+        required
+      />
 
-          <button type="submit" id="submit_login">Entrar</button>
-        </form>
-      </div>
-    </main>
-  </body>
-</html>
+      <a href="/password_reset" class="password-recovery">Esqueci minha senha</a>
+
+      <button type="submit" id="submit_login">Entrar</button>
+    </form>
+  </div>
+</main>
+<!-- STYLE -->
+<link rel="stylesheet" href="/css/login/styles.css" type="text/css" />
+<!-- END -->

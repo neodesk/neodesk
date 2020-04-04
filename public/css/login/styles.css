@@ -44,12 +44,23 @@ main {
   color: var(--clr-primary);
 }
 
+.login_form_label {
+  margin-top: 5px;
+  margin-bottom: 0;
+
+  display: flex;
+  align-self: flex-start;
+
+  font-size: 20px;
+  color: #F5F6F7;
+}
+
 .form-control {
   background-color: var(--clr-grey-10);
   display: block;
   padding: 0.75rem 1rem;
   width: 100%;
-  margin: 1.5rem auto;
+  margin: 0.5rem auto;
   border: none;
   text-transform: uppercase;
   letter-spacing: var(--spacing);
@@ -84,10 +95,9 @@ button#submit_login:hover {
 }
 
 .password-recovery {
-  position: relative;
-  bottom: 20px;
+  margin-top: 5px;
   color: var(--clr-primary);
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 400;
   display: block;
   text-align: right;

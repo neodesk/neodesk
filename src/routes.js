@@ -1,29 +1,29 @@
 import { Router } from 'express';
 
-const routes = new Router();
+const routes = Router();
 
 routes.get('/', (req, res) => {
-  res.render('index')
-})
+  res.render('index');
+});
 
 routes.get('/login', (req, res) => {
-  res.render('login')
-})
+  res.render('login');
+});
 
 routes.get('/password_reset', (req, res) => {
-  res.render('password_reset')
-})
+  res.render('password_reset');
+});
 
 routes.get('/user', (req, res) => {
-  res.render('user')
-})
+  res.render('user/home');
+});
 
 routes.get('/user/subcategory', (req, res) => {
-  res.render('user/subcategory')
-})
+  res.render('user/subcategory');
+});
 
 routes.get('/operator', (req, res) => {
-  res.render('operator')
-})
+  res.render('operator/home');
+});
 
 export default routes;

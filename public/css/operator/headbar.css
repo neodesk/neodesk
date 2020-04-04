@@ -1,0 +1,16 @@
+#operatorHeader {
+  height: 80px;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  align-content: flex-end;
+}
+
+#operatorHeader div {
+  margin-right: 15px;
+}
+.operatorAvatar img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 25px;
+}

@@ -1,12 +1,19 @@
+<!-- PATH -->
 <div class="pathContainer">
   <i class="material-icons md-36 md-dark">home</i>
+
   <a href="#">
-    <%path.forEach((p,i) => {%>
-      <%if(i<path.length-1) {%>
-        <%=p%> >
-      <%} else {%>
-        <%=p%>
-      <%}%>
-    <%})%>
+    <% path.forEach((p,i) => { %>
+      <% if(i<path.length-1) { %>
+        <%= p %> >
+
+      <% } else { %>
+        <%= p %>
+
+      <% } %>
+    <% }) %>
   </a>
 </div>
+<!-- STYLE -->
+<link rel="stylesheet" href="/css/user/path.css" type="text/css" />
+<!-- END -->
