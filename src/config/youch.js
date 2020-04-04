@@ -9,12 +9,14 @@ export default (err, req, res, next) => {
         const url = `https://stackoverflow.com/search?q=${encodeURIComponent(
           `[express] ${message}`
         )}`;
+
         return `<a href="${url}" target="_blank" title="Search on stackoverflow"><i class="fab fa-stack-overflow"></i></a>`;
       })
       .addLink(({ message }) => {
         const url = `https://www.google.com/search?q=${encodeURIComponent(
-          `[express] ${message}`
+          `express ${message}`
         )}`;
+
         return `<a href="${url}" target="_blank" title="Search on google"><i class="fab fa-google"></i></a>`;
       })
       .toHTML()
