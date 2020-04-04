@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
+}
+
 main {
   font-weight: 600;
   font-size: 24px;
