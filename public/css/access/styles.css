@@ -1,6 +1,6 @@
 body {
   -webkit-font-smoothing: antialiased;
-  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
+  background-color: #e3f9f0;
 }
 
 main {
@@ -57,7 +57,7 @@ main {
   align-self: flex-start;
 
   font-size: 20px;
-  color: #F5F6F7;
+  color: #f5f6f7;
 }
 
 .form-control {

@@ -3,7 +3,7 @@ import { Router } from 'express';
 const routes = Router();
 
 routes.get('/', (req, res) => {
-  res.render('index');
+  res.render('home');
 });
 
 routes.get('/login', (req, res) => {

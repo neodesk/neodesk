@@ -1,0 +1,11 @@
+#logo_home {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar-brand {
+  text-align: center;
+  font-size: 2em;
+}
