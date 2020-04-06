@@ -22,5 +22,5 @@ export default async (err, req, res, next) => {
     return res.status(500).send(errors).end();
   }
 
-  return res.status(500).json({ error: 'Internal server error.' });
+  return res.status(500).render('access/500');
 };

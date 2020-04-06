@@ -3,13 +3,13 @@
 ## Pra Fazer
 
 - [ ] Telas Web
-  - [ ] Componentes Globais
+  - [x] Componentes Globais
     - [x] Tela de login e reset de senha
     - [x] Header do Usuario
     - [x] Menu Lateral do Usuario
     - [x] Header do Operador
     - [x] Menu Lateral do Operador
-    - [ ] Tela 404
+    - [x] Tela 404 e 500
   - [ ] Conteudo das telas:
     - [ ] Usuario:
       - [x] Departamento e Categoria
@@ -30,5 +30,5 @@
 
 Kallebe: Seleção de sub-categoria, Abertura de chamado, Listagem de Usuarios e Operadores (Operador)
 Pedro: Header do Operador, Fila de chamado, Visualização do chamado, Kanban
-Luis: Tela 404, Dashboard Operador, Listagem de chamado Usuario, Edição de Usuarios e Operadores (Operador)
+Luis: Tela 404 e 500, Dashboard Operador, Listagem de chamado Usuario, Edição de Usuarios e Operadores (Operador)
 Laercio (se consegui): Visualização de chamado Usuario

@@ -1,10 +1,4 @@
-<!-- TITLE -->
-<%- contentFor('title') %>
-Login
-<!-- END -->
-
-<!-- BODY -->
-<%- contentFor('body') %>
+<%- contentFor('title') %> Login <%- contentFor('body') %>
 <main>
   <div class="login">
     <object
@@ -19,7 +13,7 @@ Login
       <a href="/login" id="link-operador">Login de operador</a>
     </div>
 
-    <br/>
+    <br />
 
     <form action="" method="POST" class="login-form">
       <label for="login" class="login_form_label">Login</label>
@@ -42,12 +36,13 @@ Login
         required
       />
 
-      <a href="/password_reset" class="password-recovery">Esqueci minha senha</a>
+      <a href="/password_reset" class="password-recovery"
+        >Esqueci minha senha</a
+      >
 
       <button type="submit" id="submit_login">Entrar</button>
     </form>
   </div>
 </main>
 <!-- STYLE -->
-<link rel="stylesheet" href="/css/login/styles.css" type="text/css" />
-<!-- END -->
+<link rel="stylesheet" href="/css/access/login.css" type="text/css" />

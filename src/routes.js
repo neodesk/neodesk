@@ -7,11 +7,19 @@ routes.get('/', (req, res) => {
 });
 
 routes.get('/login', (req, res) => {
-  res.render('login');
+  res.render('access/login');
 });
 
 routes.get('/password_reset', (req, res) => {
-  res.render('password_reset');
+  res.render('access/password_reset');
+});
+
+routes.get('/404', (req, res) => {
+  res.render('access/404');
+});
+
+routes.get('/500', (req, res) => {
+  res.render('access/500');
 });
 
 routes.get('/user', (req, res) => {
@@ -24,6 +32,10 @@ routes.get('/user/subcategory', (req, res) => {
 
 routes.get('/operator', (req, res) => {
   res.render('operator/home');
+});
+
+routes.get('*', (req, res) => {
+  res.render('access/404');
 });
 
 export default routes;

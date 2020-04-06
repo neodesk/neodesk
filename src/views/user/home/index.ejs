@@ -1,17 +1,9 @@
-<!-- TITLE -->
-<%- contentFor('title') %>
-Home
-<!-- END -->
-
-<!-- BODY -->
-<%- contentFor('body') %>
-
-<%- include("../_sidenav.ejs")%>
+<%- contentFor('title') %> Home <%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
 
 <div class="contentContainer">
-  <%- include("../_headbar.ejs")%> 
-
-  <%- include("../../shared/_path.ejs", { path: ['home'] } )%>
+  <%- include("../_headbar.ejs")%> <%- include("../../shared/_path.ejs", { path:
+  ['home'] } )%>
 
   <main>
     <div class="servicesContainer">
@@ -81,4 +73,3 @@ Home
 </div>
 <!-- STYLE -->
 <link rel="stylesheet" href="/css/user/home.css" type="text/css" />
-<!-- END -->

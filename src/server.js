@@ -1,3 +1,7 @@
-import app from "./app";
+import app from './app';
 
-app.listen(3333);
+const port = process.env.PORT;
+
+app.listen(port);
+
+console.log(`👂Listening on ⚓port ${port}...`);

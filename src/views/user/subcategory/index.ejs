@@ -1,17 +1,9 @@
-<!-- TITLE -->
-<%- contentFor('title') %>
-Subcategoria
-<!-- END -->
-
-<!-- BODY -->
-<%- contentFor('body') %>
-
-<%- include("../_sidenav.ejs")%>
+<%- contentFor('title') %> Subcategoria <%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
 
 <div class="contentContainer">
-  <%- include("../_headbar.ejs")%> 
-
-  <%- include("../../shared/_path.ejs", { path: ['home', 'it'] } )%>
+  <%- include("../_headbar.ejs")%> <%- include("../../shared/_path.ejs", { path:
+  ['home', 'it'] } )%>
 
   <main>
     <div id="InfoContainer">
@@ -72,4 +64,3 @@ Subcategoria
 <!-- STYLE -->
 <link rel="stylesheet" href="/css/user/home.css" type="text/css" />
 <link rel="stylesheet" href="/css/user/subcategory.css" type="text/css" />
-<!-- END -->
