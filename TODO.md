@@ -13,8 +13,8 @@
   - [ ] Conteudo das telas:
     - [ ] Usuario:
       - [x] Departamento e Categoria
-      - [ ] Sub-Categoria
-      - [ ] Abertura
+      - [x] Sub-Categoria
+      - [x] Abertura
       - [ ] Listagem de chamados
       - [ ] Visualizacao de chamado
     - [ ] Operador:
@@ -29,6 +29,6 @@
 ### Desitribuição do trabalho
 
 Kallebe: Seleção de sub-categoria, Abertura de chamado, Listagem de Usuarios e Operadores (Operador)
-Pedro: Header do Operador, Fila de chamado, Visualização do chamado, Kanban
+Pedro: Header do Operador, Fila de chamado, Visualização do chamado, Painel Kanban
 Luis: Tela 404 e 500, Dashboard Operador, Listagem de chamado Usuario, Edição de Usuarios e Operadores (Operador)
 Laercio (se consegui): Visualização de chamado Usuario
