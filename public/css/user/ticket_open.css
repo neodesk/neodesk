@@ -1,0 +1,125 @@
+main {
+  margin: 20px;
+}
+
+.contentRow {
+  display: flex;
+  border-bottom: 2px solid rgba(0,0,0,.3);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.sectionDivision {
+  width: 50%;
+}
+
+#userData li{
+  display: flex;
+  width: 100%;
+}
+
+#userData li p {
+  font-size: 18px;
+  width: auto;
+}
+
+#userData li .property {
+  font-size: 18px;
+  color: #4390bd;
+  width: 150px;
+}
+
+#userName {
+  font-weight: bold;
+}
+
+#ticketWiki div {
+  height: 300px;
+}
+
+#ticketWiki div {
+  overflow: auto;
+}
+
+#ticketWiki ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 0 15px 15px 0;
+    background-color: #F5F5F5;
+}
+
+#ticketWiki ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+    border: 2px solid  #000;
+    border-radius: 0 15px 15px 0;
+
+}
+
+#ticketWiki ::-webkit-scrollbar-thumb {
+    border-radius: 0 15px 15px 0;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #0c41b4;
+}
+
+#ticketWiki h2 {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+#ticketWiki div {
+  border: 2px solid #333;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+#ticketWiki div li {
+  border-bottom: 2px solid #333;
+  margin-top: 10px;
+}
+
+#ticketWiki div li p {
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+form textarea {
+  resize: vertical;
+  width: 100%;
+  height: 150px;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+form button {
+  height: 40px;
+  width: 100%;
+  background-color: var(--clr-primary);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 2px 0;
+  transition: background-color 1s;
+}
+
+form button:hover {
+  background-color: var(--clr-grey-5);
+}
