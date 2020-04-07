@@ -39,7 +39,7 @@ routes.get('/operator', (req, res) => {
 });
 
 routes.get('*', (req, res) => {
-  res.render('access/404');
+  return res.status(404).render('access/404');
 });
 
 export default routes;
