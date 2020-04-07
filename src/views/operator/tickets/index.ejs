@@ -1,0 +1,16 @@
+<%- contentFor('title') %> Operador <%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
+
+<div class="contentContainer">
+<%- include("../_headbar.ejs")%>
+</div>
+
+<nav>
+  <%- include("../../shared/_path.ejs", { path: ['home', 'fila x'] })%>
+</nav>
+
+<main class="operatorMain" id="operatorMain">
+  <%- include("./_filaChamado.ejs")%>
+</main>
+
+<link rel="stylesheet" href="/css/operator/styles.css" />
