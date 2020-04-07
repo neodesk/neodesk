@@ -1,6 +1,6 @@
 .pathContainer {
   height: 36px;
-  margin: 15px 0 0 120px;
+  margin: 15px 0 15px 15px;
   display: flex;
   align-items: center;
 }
