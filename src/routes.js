@@ -38,6 +38,10 @@ routes.get('/operator', (req, res) => {
   res.render('operator/home');
 });
 
+routes.get('/operator/tickets', (req, res) => {
+  res.render('operator/tickets');
+});
+
 routes.get('*', (req, res) => {
   return res.status(404).render('access/404');
 });

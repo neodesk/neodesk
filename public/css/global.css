@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: 0;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font: 14px "Roboto", sans-serif;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #4f9cc8;
+
+}
+
+main {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background: linear-gradient(-30deg, #6797ce, #f5f6f7);
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  margin-left: 100px;
+}
+
+.contentContainer {
+  position: relative;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contentContainer main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+.pathContainer {
+  margin-top: 5px;
+margin-bottom: 10px;
+
+  height: 25px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.pathContainer a {
+  font-weight: 200;
+  font-size: 20px;
+  margin-left: 15px;
+  color: #888;
+}
+.pathBar{
+  margin-left: 100px; 
+}
