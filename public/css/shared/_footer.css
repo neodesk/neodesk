@@ -13,7 +13,9 @@
 
 #main_footer p {
   color: var(--clr-white);
-  margin-top: 15px;
   text-align: center;
   font-size: 1rem;
+
+  margin-top: 16px;
+  margin-left: 5px;
 }
