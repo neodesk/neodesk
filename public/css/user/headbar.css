@@ -7,13 +7,6 @@
   align-items: center;
 }
 
-header .profile img {
-  height: 80px;
-  width: 80px;
-  border-radius: 40px;
-  box-shadow: 0 3px 8px -2px #000;
-}
-
 header .searchBar {
   display: flex;
   justify-content: center;
@@ -24,7 +17,9 @@ header .searchBar input {
   width: 600px;
   height: 100%;
   font-size: 16px;
-  padding: 10px 15px;
+  padding: 0 15px;
+  padding-top: 11px;
+  padding-bottom: 10px;
   border: none;
   border-radius: 5px 0 0 5px;
 }
@@ -33,9 +28,16 @@ header .searchBar button {
   border: none;
   border-radius: 0 5px 5px 0;
   padding: 0 5px;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 header .searchBar button:hover {
   background-color: #e29736;
+}
+
+header .profile img {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  box-shadow: 0 3px 8px -2px #000;
 }

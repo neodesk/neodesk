@@ -31,7 +31,7 @@ routes.get('/user/subcategory', (req, res) => {
 });
 
 routes.get('/user/ticket/new', (req, res) => {
-  res.render('user/ticket/new')
+  res.render('user/ticket')
 })
 
 routes.get('/operator', (req, res) => {

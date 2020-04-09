@@ -1,0 +1,19 @@
+<%- contentFor('title') %> Home <%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
+<div class="contentContainer">
+  <%- include("../_headbar.ejs")%> <%- include("../../shared/_path.ejs", { path:
+  [ 'Home', 'TI', 'Acessos', 'Redes e Conectividade - WiFi'] } )%>
+
+  <main>
+    <h1>Redes e Conectividade - WiFi</h1>
+
+    <section class="contentRow">
+      <%- include("./_user_data.ejs") %> <%- include("./_related_issues.ejs") %>
+    </section>
+
+    <h2>Informações do Chamado</h2>
+
+    <%- include("./_new_ticket_form.ejs") %>
+  </main>
+</div>
+<link rel="stylesheet" href="/css/user/ticket_open.css" />

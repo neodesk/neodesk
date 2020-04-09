@@ -19,7 +19,7 @@
       - [ ] Visualizacao de chamado
     - [ ] Operador:
       - [ ] Dashboard
-      - [ ] Fila de Chamados
+      - [x] Fila de Chamados
       - [ ] Visualizacao de chamado
       - [ ] Kanban
       - [ ] Usuarios e Operadores

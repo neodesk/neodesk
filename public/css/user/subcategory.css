@@ -1,5 +1,6 @@
 main {
   width: 100%;
+  min-height: 85vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

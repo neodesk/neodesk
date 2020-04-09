@@ -1,17 +1,28 @@
 :root {
-  /*colors*/
   --clr-primary: #1c1c4c;
   --clr-primary-light: #6797ce;
+
+  --clr-main: #273C50;
+  --clr-main-light: #E3F9F0;
+
+  --clr-danger: #E82453;
+  --clr-danger-light: #FE7395;
+  
+  --clr-info: #D2FF96;
+  --clr-info-light: #F2FED0;
+  
+  --clr-aux: #FC743A;
+  --clr-aux-light: #FFB57F;
+
+  --clr-grey-0: #AAAAAA;
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
-  --clr-grey-10: #f1ffe7;
+  --clr-grey-10: #F5F6F7;
+  --clr-ultra-light: #EFFEF8;
   --clr-white: #dcdcf3;
 
-  /*fonts*/
   --ff-primary: "Roboto", sans-serif;
-  /* --ff-secondary: "Grand Hotel", cursive; */
 
-  /**/
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;

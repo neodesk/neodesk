@@ -1,18 +1,19 @@
-<div class="pathContainer">
-  <i class="material-icons md-36 md-dark">home</i>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="material-icons md-36 md-dark">home</i>
 
-  <a href="#">
-    <% path.forEach((p,i) => { %>
-      <% if(i<path.length-1) { %>
-        <%= p %> >
+    <% path.forEach((screen, index) => { %> 
+      <% if( index < path.length - 1 ) { %>
+
+      <li class="breadcrumb-item"><a href="#"><%= screen %></a></li>
 
       <% } else { %>
-        <%= p %>
+
+      <li class="breadcrumb-item active" aria-current="page"><%= screen %></li>
 
       <% } %>
     <% }) %>
-  </a>
-</div>
+  </ol>
+</nav>
 
 <link rel="stylesheet" href="/css/shared/path.css" type="text/css" />
-
