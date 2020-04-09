@@ -8,21 +8,19 @@ include("../_sidenav.ejs") %>
     <%- include("../../shared/_path.ejs", { path: ['Home'] })%>
   </nav>
 
-  <div class="row">
-    <%- include("./_operator_info.ejs")%>
-    
-    <%- include("./_admin_tools.ejs")%>
-  </div>
+  <main class="operatorMain" id="operatorMain">
+    <%- include("./_operator_info.ejs")%> <%- include("./_admin_tools.ejs")%>
 
-  <div class="row">
-    <div class="col-4">
-      <%- include("./_main_tickets.ejs")%> 
-      
-      <%- include("./_ticket_queues.ejs")%>
-    </div>
+      <div class="col-5 px-0">
+          <%- include("./_main_tickets.ejs")%>
 
-    <%- include("./_incident_analysis.ejs")%>
-  </div>
+          <%- include("./_ticket_queues.ejs")%>
+      </div>
 
-  <%- include("./_updates.ejs")%>
+      <%- include("./_incident_analysis.ejs")%>
+
+    <%- include("./_updates.ejs")%>
+  </main>
 </div>
+
+<link rel="stylesheet" href="/css/operator/styles.css" />
