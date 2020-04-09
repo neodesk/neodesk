@@ -34,7 +34,6 @@
         </thead>
 
         <tbody class="tableBody">
-
           <% Array(30).fill().forEach((num) => { %>
 
           <tr>
@@ -50,7 +49,10 @@
 
             <td>
               <span class="user_cell">
-                  <img class="user_cell_avatar" src="/img/random_avatars/3.jpg" />
+                <img
+                  class="user_cell_avatar"
+                  src="/img/random_avatars/<%= Math.floor(Math.random() * 18) %>.jpg"
+                />
 
                 <span class="user_cell_info">
                   <a>João Dias</a>
@@ -62,9 +64,10 @@
 
             <td>
               <span class="user_cell">
-                  <img class="user_cell_avatar"
-                    src="/img/random_avatars/17.jpg"
-                  />
+                <img
+                  class="user_cell_avatar"
+                  src="/img/random_avatars/<%= Math.floor(Math.random() * 18) %>.jpg"
+                />
 
                 <span class="user_cell_info">
                   <a>Clara Oliveira</a>
@@ -84,7 +87,6 @@
           </tr>
 
           <% }) %>
-
         </tbody>
       </table>
     </div>
