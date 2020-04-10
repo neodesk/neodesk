@@ -1,0 +1,12 @@
+<%- contentFor('title') %>
+Listagem de Usuarios
+
+<%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
+
+<div class="contentContainer">
+  <%- include("./_users_list.ejs")%>
+  <%- include("./_operators_list.ejs")%>
+</div>
+
+<link rel="stylesheet" href="/css/operator/users_list.css" type="text/css">

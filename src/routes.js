@@ -38,6 +38,10 @@ routes.get('/operator', (req, res) => {
   res.render('operator/home');
 });
 
+routes.get('/operator/users', (req, res) => {
+  res.render('operator/list_users');
+});
+
 routes.get('/operator/tickets', (req, res) => {
   res.render('operator/tickets');
 });

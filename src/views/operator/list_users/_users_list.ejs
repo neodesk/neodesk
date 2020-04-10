@@ -1,0 +1,21 @@
+<section>
+  <%- include('./_users_section_header', {section: 'Operators'}) %>
+  <ul>
+    <% Array(30).fill().forEach((u, i) => { %>
+      <li>
+        <img src="/random_avatars/photo-1438761681033-6461ffad8d80.jpg" alt="user">
+        <div id="info">
+          <p>
+            Fulano
+            <%= i %>
+          </p>
+          <p>Desenvolvedor</p>
+        </div>
+        <div id="actions">
+          <i class="material-icons md-36">edit</i>
+          <i class="material-icons md-36">delete</i>
+        </div>
+      </li>
+    <% }) %>
+  </ul>
+</section>
