@@ -8,6 +8,9 @@
 .material-icons.md-24 {
   font-size: 24px;
 }
+.material-icons.md-30 {
+  font-size: 30px;
+}
 .material-icons.md-36 {
   font-size: 36px;
 }
@@ -39,9 +42,45 @@
   color: #AAAAAA55;
 }
 
+
+.material-icons.md-success {
+  color: var(--clr-success);
+}
+.material-icons.md-success.md-inactive {
+  color: var(--clr-success-light);
+}
+
 .material-icons.md-secondary {
   color: #617d98FF;
 }
 .material-icons.md-secondary.md-inactive {
   color: #617d9855;
+}
+
+.material-icons.md-info {
+  color: var(--clr-info);
+}
+.material-icons.md-info.md-inactive {
+  color: var(--clr-info-light);
+}
+
+.material-icons.md-info {
+  color: var(--clr-info);
+}
+.material-icons.md-info.md-inactive {
+  color: var(--clr-info-light);
+}
+
+.material-icons.md-danger {
+  color: var(--clr-danger);
+}
+.material-icons.md-danger.md-inactive {
+  color: var(--clr-danger-light);
+}
+
+.material-icons.md-gold {
+  color: var(--clr-gold);
+}
+.material-icons.md-gold.md-inactive {
+  color: var(--clr-gold-light);
 }

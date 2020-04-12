@@ -4,6 +4,9 @@
 
   --clr-main: #273C50;
   --clr-main-light: #E3F9F0;
+  
+  --clr-success: #b2ff4d;
+  --clr-success-light: #c4f583;
 
   --clr-danger: #E82453;
   --clr-danger-light: #FE7395;
@@ -13,6 +16,9 @@
   
   --clr-aux: #FC743A;
   --clr-aux-light: #FFB57F;
+
+  --clr-gold: #d4af37;
+  --clr-gold-light: #e0c56e;
 
   --clr-grey-0: #AAAAAA;
   --clr-grey-1: #102a42;
