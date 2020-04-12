@@ -1,10 +1,28 @@
-<%- contentFor('title') %>
-Dashboard
-
-<%- contentFor('body') %> <%-
-include("../_sidenav.ejs")%>
+<%- contentFor('title') %> Dashboard <%- contentFor('body') %> <%-
+include("../_sidenav.ejs") %>
 
 <div class="contentContainer">
   <%- include("../_headbar.ejs")%>
-  <%- include("./_dashboard.ejs")%>
+
+  <nav>
+    <%- include("../../shared/_path.ejs", { crumbs: [ 
+      { path: '/operator', name:'Home' }
+    ] })%>
+  </nav>
+
+  <main class="operatorMain" id="operatorMain">
+    <%- include("./_operator_info.ejs")%> <%- include("./_admin_tools.ejs")%>
+
+      <div class="col-5 px-0">
+          <%- include("./_main_tickets.ejs")%>
+
+          <%- include("./_ticket_queues.ejs")%>
+      </div>
+
+      <%- include("./_incident_analysis.ejs")%>
+
+    <%- include("./_updates.ejs")%>
+  </main>
 </div>
+
+<link rel="stylesheet" href="/css/operator/styles.css" />

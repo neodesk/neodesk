@@ -3,7 +3,7 @@ import { Router } from 'express';
 const routes = Router();
 
 routes.get('/', (req, res) => {
-  res.render('home');
+  res.render('root');
 });
 
 routes.get('/login', (req, res) => {
@@ -31,7 +31,7 @@ routes.get('/user/subcategory', (req, res) => {
 });
 
 routes.get('/user/ticket/new', (req, res) => {
-  res.render('user/ticket/new')
+  res.render('user/ticket')
 })
 
 routes.get('/operator', (req, res) => {
@@ -47,7 +47,7 @@ routes.get('/operator/tickets', (req, res) => {
 });
 
 routes.get('*', (req, res) => {
-  res.render('access/404');
+  return res.status(404).render('access/404');
 });
 
 export default routes;

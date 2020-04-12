@@ -1,18 +1,25 @@
-<div class="pathContainer">
-  <i class="material-icons md-36 md-dark">home</i>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <i class="material-icons md-36 md-dark">home</i>
 
-  <a href="#">
-    <% path.forEach((p,i) => { %>
-      <% if(i<path.length-1) { %>
-        <%= p %> >
+    <% crumbs.forEach((crumb, index) => { %> 
+
+      <% if( index < crumbs.length - 1 ) { %>
+
+      <li class="breadcrumb-item"><a href="<%= crumb.path %>">
+        <%= crumb.name %></a>
+      </li>
 
       <% } else { %>
-        <%= p %>
+
+      <li class="breadcrumb-item active" aria-current="page">
+        <%= crumb.name %>
+      </li>
 
       <% } %>
+    
     <% }) %>
-  </a>
-</div>
+  </ol>
+</nav>
 
-<link rel="stylesheet" href="/css/shared/path.css" type="text/css" />
-
+<link rel="stylesheet" href="/css/shared/_path.css" type="text/css" />

@@ -2,63 +2,18 @@
 include("../_sidenav.ejs")%>
 
 <div class="contentContainer">
-  <%- include("../_headbar.ejs")%> <%- include("../../shared/_path.ejs", { path:
-  ['home', 'it'] } )%>
+  <%- include("../_headbar.ejs")%>
+
+  <nav>
+    <%- include("../../shared/_path.ejs", { crumbs: [ 
+      {path: '/user', name:'Home'},
+      {path: '/user/subcategory', name:'TI'}
+    ] } )%>
+  </nav>
 
   <main>
-    <div id="InfoContainer">
-      <div id="banner">
-        <img src="../img/ti-bg.jpg" alt="Banner TI" />
-      </div>
-
-      <article>
-        <h2>Info sobre categoria</h2>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
-          asperiores maiores, voluptatibus maxime totam harum facilis repellat.
-          Minus laborum ipsa eum quae sequi aspernatur aliquam dolor
-          voluptatibus sapiente id!
-        </p>
-      </article>
-    </div>
-
-    <nav class="subCategoryOptions">
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-
-      <a href="#" class="option">
-        <i class="material-icons">assignment</i>
-
-        <p>Opcao de subcategoria</p>
-      </a>
-    </nav>
+    <%- include("./_category_description.ejs") %> <%-
+    include("./_subcategories.ejs") %>
   </main>
 </div>
 

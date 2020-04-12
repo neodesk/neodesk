@@ -28,7 +28,8 @@ class App {
     this.server.set('layout extractScripts', true);
     this.server.set('layout extractStyles', true);
     this.server.set('layout extractMetas', true);
-
+    this.server.set('layout', 'layouts/default');
+    
     this.server.use(express.urlencoded({ extended: true }));
 
     this.server.use(cors());
