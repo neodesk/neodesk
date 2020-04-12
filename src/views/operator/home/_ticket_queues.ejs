@@ -1,11 +1,10 @@
 <div class="col-12">
-  <div class="rowTicket">
-    <div class="titleBar">
+  <div class="panel">
+    <div class="panel_title_bar">
       <h4>Tickets por Grupo</h4>
 
       <i class="material-icons md-24 md-light">settings</i>
     </div>
-    <div class="ticketList">
       <% Array(5).fill().forEach((num) => { %>
 
       <div class="ticket_queue">
@@ -17,7 +16,7 @@
           <i class="material-icons md-36 md-dark">public</i>
 
           <div class="ticket_queue_count_text">
-            <span>Sem operador</span>
+            <span>Sem Operador</span>
             <span>56</span>
           </div>
         </a>
@@ -42,8 +41,7 @@
       </div>
 
       <% }) %>
-    </div>
   </div>
 </div>
 
-<link rel="stylesheet" href="/css/operator/_ticket_queues.css" />
+<link rel="stylesheet" href="/css/operator/home/_ticket_queues.css" />

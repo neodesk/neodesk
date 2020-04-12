@@ -1,29 +1,59 @@
 <div class="col-12">
-  <div class="rowTicket">
-    <div class="titleBar">
+  <div class="panel">
+    <div class="panel_title_bar">
       <h4>Últimas atualizações</h4>
 
       <i class="material-icons md-24 md-light">settings</i>
     </div>
-    <div class="ticketList">
-      <% Array(2).fill().forEach((num) => { %>
+    <% Array(3).fill().forEach((num) => { %>
 
-      <div class="ticketList">
-        <div class="col-12" id="ticket">
-          <div class="col-10" id="ticketInfo">
-            <h5>Qual a senha do Wi-fi?</h5>
+    <div class="row p-0 m-1">
+      <div class="col px-2 py-2 m-1 update">
+        <div class="update_info">
+          <a href="#" class="update_title">
+            Sistema crítico indisponível por duas horas
+          </a>
 
-            <h6>Ticket aberto por: Fred Postigo</h6>
+          <span class="update_timestamp">
+            11/03/2020 03:48, 6 horas atrás
+          </span>
+        </div>
 
-            <p>Preciso saber qual a senha para aces...</p>
-          </div>
-          <div class="col-2" id="ticketStatus">
-            <i class="material-icons md-48 md-dark">assignment_late</i>
-          </div>
+        <div class="two_line_text update_content">
+          Duis cursus tellus et lectus eleifend commodo. Suspendisse euismod
+          aliquet tellus a mollis. Pellentesque pharetra orci a urna accumsan
+          sollicitudin. Ut aliquet, ex et rhoncus egestas, eros erat malesuada
+          justo, dictum cursus nunc nisl eget turpis. Curabitur justo purus,
+          lobortis vitae nibh id, volutpat ultrices ligula. Etiam sit amet
+          viverra nibh. Duis congue condimentum leo, lobortis aliquet metus
+          efficitur eget.
         </div>
       </div>
 
-      <% }) %>
+      <div class="col px-2 py-2 m-1 update">
+        <div class="update_info">
+          <a href="#" class="update_title">
+            Tutorial da Nova VPN
+          </a>
+          
+          <span class="update_timestamp">
+            10/03/2020 12:23, 1 dia atrás
+          </span>
+        </div>
+
+        <div class="two_line_text update_content">
+          Mauris aliquam sit amet erat vitae tempus. In iaculis ut augue eget
+          euismod. Integer lectus velit, tincidunt fringilla nisi a, blandit
+          accumsan purus. Nam a enim ullamcorper, imperdiet lorem et, euismod
+          lorem. Vestibulum quis fringilla lacus. Pellentesque non elementum
+          massa. Nulla imperdiet diam id ultrices pulvinar. Nullam viverra
+          scelerisque maximus.
+        </div>
+      </div>
     </div>
+
+    <% }) %>
   </div>
 </div>
+
+<link rel="stylesheet" href="/css/operator/home/_updates.css" />

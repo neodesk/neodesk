@@ -1,0 +1,30 @@
+.update {
+  border: 2px solid var(--clr-grey-10);
+  border-radius: 5px;
+}
+
+.update_info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.update_title {
+  margin-left: 5px;
+
+  font-size: 1.75em;
+  color: var(--clr-primary-light);
+}
+
+.update_timestamp {
+  margin-right: 15px;
+  color: var(--clr-primary-light);
+}
+
+.update_content {
+  margin: 5px;
+  margin-bottom: 0;
+
+  color: var(--clr-grey-0);
+}
