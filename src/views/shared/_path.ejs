@@ -2,16 +2,22 @@
   <ol class="breadcrumb">
     <i class="material-icons md-36 md-dark">home</i>
 
-    <% path.forEach((screen, index) => { %> 
-      <% if( index < path.length - 1 ) { %>
+    <% crumbs.forEach((crumb, index) => { %> 
 
-      <li class="breadcrumb-item"><a href="#"><%= screen %></a></li>
+      <% if( index < crumbs.length - 1 ) { %>
+
+      <li class="breadcrumb-item"><a href="<%= crumb.path %>">
+        <%= crumb.name %></a>
+      </li>
 
       <% } else { %>
 
-      <li class="breadcrumb-item active" aria-current="page"><%= screen %></li>
+      <li class="breadcrumb-item active" aria-current="page">
+        <%= crumb.name %>
+      </li>
 
       <% } %>
+    
     <% }) %>
   </ol>
 </nav>

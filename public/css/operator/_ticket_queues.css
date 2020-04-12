@@ -1,0 +1,50 @@
+.ticket_queue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 10px;
+  padding: 10px;
+
+  border: 1px solid lightseagreen;
+  border-radius: 5px;
+}
+
+.ticket_queue_name {
+  font-size: 1.5em;
+}
+
+.ticket_queue_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticket_queue_count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ticket_queue_count {
+  color: var(--clr-grey-5);
+  transition: color 0.5s;
+}
+
+.ticket_queue_count:hover {
+  color: var(--clr-aux-light);
+}
+
+.ticket_queue_count_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.ticket_queue_count_text span:first-child {
+  margin-bottom: 5px;
+  color: var(  --clr-primary-light);
+}

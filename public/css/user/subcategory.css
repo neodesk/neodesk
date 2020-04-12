@@ -43,16 +43,19 @@ article p {
 }
 
 .subCategoryOptions .option {
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--clr-grey-5);
+
+  height: 60px;
   margin: 20px 20px;
   border-radius: 15px;
+
+  background-color: var(--clr-grey-5);
+  color: var(--clr-white);
 }
 
-.subCategoryOptions p {
+.subCategoryOptions span {
   margin-left: 10px;
   font-size: 18px;
   height: 100%;

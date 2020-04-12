@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 
-button:focus {
-  outline: 0;
+*:focus{
+  outline:0;
 }
 
 html,
@@ -35,7 +35,6 @@ button {
 
 a {
   text-decoration: none;
-  color: var(--clr-white);
 }
 
 a:hover {

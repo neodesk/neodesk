@@ -1,0 +1,25 @@
+<div class="col-12">
+  <div class="rowTicket">
+    <div class="titleBar">
+      <h4>Todos os Tickets</h4>
+      <i class="material-icons md-24 md-light">settings</i>
+    </div>
+
+    <div class="ticketList">
+      <table class="tableTickets">
+
+        <%- include("./_all_tickets_table_head.ejs")%>
+
+        <tbody class="tableBody">
+          <% Array(50).fill().forEach((num) => { %>
+
+            <%- include("./_all_tickets_table_line.ejs")%>
+
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="/css/operator/_all_tickets_table.css" />

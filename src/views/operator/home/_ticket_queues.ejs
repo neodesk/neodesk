@@ -5,18 +5,45 @@
 
       <i class="material-icons md-24 md-light">settings</i>
     </div>
+    <div class="ticketList">
+      <% Array(5).fill().forEach((num) => { %>
 
-    <div class="row">
-      <h6>Redes e Servidores</h6>
+      <div class="ticket_queue">
+        <a href="/operator/tickets" class="ticket_queue_name">
+          Redes e Servidores
+        </a>
+
+        <a href="/operator/tickets" class="ticket_queue_count">
+          <i class="material-icons md-36 md-dark">public</i>
+
+          <div class="ticket_queue_count_text">
+            <span>Sem operador</span>
+            <span>56</span>
+          </div>
+        </a>
+
+        <a href="/operator/tickets" class="ticket_queue_count">
+          <i class="material-icons md-36 md-dark">assignment_ind</i>
+
+          <div class="ticket_queue_count_text">
+            <span>Própios</span>
+            <span>4</span>
+          </div>
+        </a>
+
+        <a href="/operator/tickets" class="ticket_queue_count">
+          <i class="material-icons md-36 md-dark">assignment_late</i>
+
+          <div class="ticket_queue_count_text">
+            <span>Urgentes</span>
+            <span>10</span>
+          </div>
+        </a>
+      </div>
+
+      <% }) %>
     </div>
-
-    <div class="row">
-      <h6>Redes e Servidores</h6>
-    </div>
-
-    <div class="row">
-      <h6>Redes e Servidores</h6>
-    </div>
-
   </div>
 </div>
+
+<link rel="stylesheet" href="/css/operator/_ticket_queues.css" />
