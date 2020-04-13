@@ -2,32 +2,32 @@
   --clr-primary: #1c1c4c;
   --clr-primary-light: #6797ce;
 
-  --clr-main: #273C50;
-  --clr-main-light: #E3F9F0;
-  
+  --clr-main: #273c50;
+  --clr-main-light: #e3f9f0;
+
   --clr-success: #b2ff4d;
   --clr-success-light: #c4f583;
 
-  --clr-danger: #E82453;
-  --clr-danger-light: #FE7395;
-  
-  --clr-info: #D2FF96;
-  --clr-info-light: #F2FED0;
-  
-  --clr-aux: #FC743A;
-  --clr-aux-light: #FFB57F;
+  --clr-danger: #e82453;
+  --clr-danger-light: #fe7395;
+
+  --clr-info: #d2ff96;
+  --clr-info-light: #f2fed0;
+
+  --clr-aux: #fc743a;
+  --clr-aux-light: #ffb57f;
 
   --clr-gold: #d4af37;
   --clr-gold-light: #e0c56e;
 
-  --clr-grey-0: #AAAAAA;
+  --clr-grey-0: #aaaaaa;
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
-  --clr-grey-10: #F5F6F7;
-  --clr-ultra-light: #EFFEF8;
+  --clr-grey-10: #f5f6f7;
+  --clr-ultra-light: #effef8;
   --clr-white: #dcdcf3;
 
-  --ff-primary: "Roboto", sans-serif;
+  --ff-primary: 'Roboto', sans-serif;
 
   --transition: all 0.3s linear;
   --spacing: 0.25rem;

@@ -56,6 +56,11 @@
   margin-left: 10px;
 }
 
+.user_column_info a {
+  font-size: 16px;
+  margin: 0px;
+}
+
 .user_column_info span {
   font-size: 12px;
   color: grey;
@@ -64,14 +69,3 @@
   margin-top: -20px;
 }
 
-.user_column_info a {
-  font-size: 16px;
-  margin: 0px;
-  margin-top: 5px;
-
-  color: var(--clr-primary-light);
-}
-
-.user_column_info a:hover {
-  color: var(--clr-grey-5);
-}

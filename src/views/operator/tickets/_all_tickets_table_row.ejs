@@ -3,9 +3,13 @@
     <input type="checkbox" />
   </td>
 
-  <td>#1332</td>
+  <td>
+    <%= faker.random.number() %>
+  </td>
 
-  <td>Qual a senha do Wi-fi?</td>
+  <td>
+    <%= faker.fake("{{lorem.words}}?") %>
+  </td>
 
   <td>Infraestrutura</td>
 
@@ -18,10 +22,10 @@
 
       <span class="user_column_info">
         <a href="#">
-          <%= faker.fake("{{name.findName}}") %>
+          <%= faker.name.findName() %>
         </a>
 
-        <span>Gerente | Dpto. de Compras</span>
+        <span><%= faker.fake("{{name.jobTitle}} | {{name.jobArea}}") %></span>
       </span>
     </span>
   </td>
@@ -35,17 +39,19 @@
 
       <span class="user_column_info">
         <a href="#">
-          <%= faker.fake("{{name.findName}}") %>
+          <%= faker.name.findName() %>
         </a>
 
-        <span>Junior Developer</span>
+        <span><%= faker.fake("{{name.jobTitle}} | {{name.jobArea}}") %></span>
       </span>
     </span>
   </td>
 
   <td>Alta</td>
 
-  <td>06-abr-2020</td>
+  <td>
+    <%= new Date(faker.date.past()).toLocaleDateString() %>
+  </td>
 
   <td>Atendido</td>
 

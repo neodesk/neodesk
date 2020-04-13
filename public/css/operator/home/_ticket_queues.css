@@ -34,10 +34,6 @@
   transition: color 0.5s;
 }
 
-.ticket_queue_count:hover {
-  color: var(--clr-aux-light);
-}
-
 .ticket_queue_count_text {
   display: flex;
   flex-direction: column;

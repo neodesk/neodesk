@@ -11,17 +11,22 @@
 
       <div class="col-12" id="ticket">
         <div class="col-10" id="ticketInfo">
-          <h5>Qual a senha do Wi-fi?</h5>
+          <h5>
+            <%= faker.fake("{{lorem.words}}?") %>
+          </h5>
 
-          <h6>Ticket aberto por: Fred Postigo</h6>
+          <h6>
+            <%= faker.fake("Ticket aberto por: {{name.findName}}") %>
+          </h6>
 
-          <p>Preciso saber qual a senha para aces...</p>
+          <p>
+            <%= faker.fake("{{lorem.sentence}}...") %>
+          </p>
         </div>
         <div class="col-2" id="ticketStatus">
           <i class="material-icons md-48 md-dark">assignment_late</i>
         </div>
       </div>
-
 
     <% }) %>
     </div>

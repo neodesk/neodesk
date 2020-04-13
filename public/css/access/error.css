@@ -84,6 +84,13 @@
   box-shadow: 0px 4px 15px -5px #0046d5;
 }
 
+.error_container a:hover {
+  background: var(--clr-aux-light);
+
+  -webkit-box-shadow: 0px 4px 15px -5px var(--clr-aux-light);
+  box-shadow: 0px 4px 15px -5px var(--clr-aux-light);
+}
+
 @media only screen and (max-width: 600px) {
   .error_container .error_content {
     height: 142px;

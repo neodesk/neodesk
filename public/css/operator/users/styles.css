@@ -1,5 +1,5 @@
 .users {
-  max-height: 35vh;
+  padding-right: 10px;
 }
 
 .user {
@@ -9,21 +9,64 @@
   justify-content: space-between;
 
   padding: 0;
-  margin: 10px 100px 10px 10px;
+  margin: 5px;
+
   border-radius: 30px;
   background-color: var(--clr-main-light);
+}
+
+.user:nth-child(even) {
+  background-color: var(--clr-info-light);
+}
+
+.user_avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .user_info {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.user_avatar {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
-  object-fit: cover;
+.user_description {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user_description_column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-left: 20px;
+  min-width: 250px;
+}
+
+.user_description_column a {
+  font-size: 1.2em;
+}
+
+.user_description_column span {
+  font-size: 1.2em;
+  color: var(--clr-primary-light);
+}
+
+.user_description_column span:last-child {
+  margin-top: 5px;
+
+  font-size: 1em;
+  color: var(--clr-grey-0);
+}
+
+.actions {
+  padding: 0;
+  margin-right: 15px;
 }

@@ -39,6 +39,5 @@
 }
 
 .y_overflow_list {
-  flex-direction: column;
   overflow-y: auto;
 }
