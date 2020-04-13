@@ -29,7 +29,7 @@ $ npm run dev
   toda a aplicação. Nele podemos definir rotas, controllers, models, views,
   middlewares, serviços e validações.
 
-- [ejs](https://ejs.co/#docs): linguagem de templeting que nos permite manipular
+- [ejs](https://ejs.co/#docs): linguagem de templating que nos permite manipular
   e executar código javascript na geração das views, possibilitando um conteudo
   dinamico.
 
@@ -44,7 +44,7 @@ $ npm run dev
   [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env).
 
 - [cors](https://github.com/expressjs/cors#usage): middleware
-  que implementa o padrão da industria Implementa o padrão da industria de
+  que implementa o padrão da industria de
   [Cross-Origin Resource Sharing](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS),
   permitindo a transferência de dados entre dominios web diferentes de uma
   maneira segura.

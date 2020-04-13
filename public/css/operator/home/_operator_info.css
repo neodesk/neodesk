@@ -12,7 +12,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .operator_info_name {
@@ -36,6 +36,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
+  border-left: 2px solid var(--clr-grey-10);
+  padding-right: 3px;
 }
 
 .operator_info_stat_details {

@@ -1,0 +1,27 @@
+<div class="col-12 user">
+  <div class="user_info">
+    <img class="user_avatar" src="<%= faker.internet.avatar() %>" alt="user" />
+
+    <div class="user_description">
+      <div class="user_description_column">
+        <a href="/operator/users/edit"><%= faker.name.findName() %></a>
+        <span><%= faker.internet.userName() %></span>
+      </div>
+
+      <div class="user_description_column">
+        <span><%= faker.internet.email() %></span>
+        <span><%= faker.phone.phoneNumber() %></span>
+      </div>
+
+      <div class="user_description_column">
+        <span><%= faker.name.jobTitle() %></span>
+        <span><%= faker.name.jobArea() %></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <i class="material-icons md-36">edit</i>
+    <i class="material-icons md-36 md-danger">delete</i>
+  </div>
+</div>
