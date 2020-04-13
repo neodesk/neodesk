@@ -34,19 +34,19 @@
   padding-left: 10px;
 }
 
-.user_cell {
+.user_column {
   display: flex;
   align-items: center;
 }
 
-.user_cell_avatar {
+.user_column_avatar {
   height: 40px;
   object-fit: cover;
   border-radius: 5px;
   width: 40px;
 }
 
-.user_cell_info {
+.user_column_info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -56,7 +56,7 @@
   margin-left: 10px;
 }
 
-.user_cell_info span {
+.user_column_info span {
   font-size: 12px;
   color: grey;
   font-weight: 100;
@@ -64,8 +64,14 @@
   margin-top: -20px;
 }
 
-.user_cell_info a {
+.user_column_info a {
   font-size: 16px;
   margin: 0px;
   margin-top: 5px;
+
+  color: var(--clr-primary-light);
+}
+
+.user_column_info a:hover {
+  color: var(--clr-grey-5);
 }

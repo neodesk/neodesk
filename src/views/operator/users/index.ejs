@@ -1,0 +1,24 @@
+<%- contentFor('title') %>
+Listagem de Usuarios
+
+<%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
+
+<div class="contentContainer">
+  <%- include("../_headbar.ejs")%>
+
+  <nav>
+    <%- include("../../shared/_path.ejs", { crumbs: [ 
+      { path: '/operator', name:'Home' },
+      { path: '/operator/users', name:'Usuários' }
+    ] })%>
+  </nav>
+
+  <main class="operatorMain">
+    <%- include("./_users_list.ejs")%>
+    <%- include("./_operators_list.ejs")%>
+  </main>
+</div>
+
+<link rel="stylesheet" href="/css/operator/styles.css" />
+<link rel="stylesheet" href="/css/operator/users/styles.css" />

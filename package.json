@@ -15,9 +15,10 @@
     "express-ejs-layouts": "^2.5.0"
   },
   "devDependencies": {
-    "youch": "^2.0.10",
     "nodemon": "^2.0.2",
     "prettier": "^2.0.2",
-    "sucrase": "^3.12.1"
+    "sucrase": "^3.12.1",
+    "youch": "^2.0.10",
+    "faker": "^4.1.0"
   }
 }

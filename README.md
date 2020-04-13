@@ -62,3 +62,6 @@ $ npm run dev
 
 - [sucrase](https://github.com/alangpierce/sucrase#sucrase): o compilador de
   javascript mais veloz do mercado.
+
+- [faker](https://github.com/Marak/faker.js): cria dados randomicos como nomes,
+  emails, avatars de usuários, endereços, lorem ipsums, etc.

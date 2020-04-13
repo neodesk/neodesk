@@ -10,14 +10,16 @@
   <td>Infraestrutura</td>
 
   <td>
-    <span class="user_cell">
+    <span class="user_column">
       <img
-        class="user_cell_avatar"
-        src="/img/random_avatars/<%= Math.floor(Math.random() * 64) %>.jpg"
+        class="user_column_avatar"
+        src="<%= faker.internet.avatar() %>"
       />
 
-      <span class="user_cell_info">
-        <a>João Dias</a>
+      <span class="user_column_info">
+        <a href="#">
+          <%= faker.fake("{{name.findName}}") %>
+        </a>
 
         <span>Gerente | Dpto. de Compras</span>
       </span>
@@ -25,14 +27,16 @@
   </td>
 
   <td>
-    <span class="user_cell">
+    <span class="user_column">
       <img
-        class="user_cell_avatar"
-        src="/img/random_avatars/<%= Math.floor(Math.random() * 64) %>.jpg"
+        class="user_column_avatar"
+        src="<%= faker.internet.avatar() %>"
       />
 
-      <span class="user_cell_info">
-        <a>Clara Oliveira</a>
+      <span class="user_column_info">
+        <a href="#">
+          <%= faker.fake("{{name.findName}}") %>
+        </a>
 
         <span>Junior Developer</span>
       </span>

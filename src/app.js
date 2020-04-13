@@ -5,7 +5,7 @@ import expressLayouts from 'express-ejs-layouts';
 import { join, resolve } from 'path';
 import cors from 'cors';
 
-import routes from './routes';
+import router from './router';
 import youch from './config/youch';
 
 class App {
@@ -38,7 +38,7 @@ class App {
   middlewares() {}
 
   routes() {
-    this.server.use(routes);
+    this.server.use(router);
   }
 
   exceptionHandler() {

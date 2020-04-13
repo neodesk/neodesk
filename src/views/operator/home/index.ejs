@@ -1,4 +1,7 @@
-<%- contentFor('title') %> Dashboard <%- contentFor('body') %> <%-
+<%- contentFor('title') %>
+Dashboard
+
+<%- contentFor('body') %> <%-
 include("../_sidenav.ejs") %>
 
 <div class="contentContainer">
@@ -10,7 +13,7 @@ include("../_sidenav.ejs") %>
     ] })%>
   </nav>
 
-  <main class="operatorMain" id="operatorMain">
+  <main class="operatorMain">
     <%- include("./_operator_info.ejs")%> <%- include("./_admin_tools.ejs")%>
 
       <div class="col-5 px-0">

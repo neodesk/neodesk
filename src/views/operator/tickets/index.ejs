@@ -1,4 +1,7 @@
-<%- contentFor('title') %> Operador <%- contentFor('body') %> <%-
+<%- contentFor('title') %>
+Operador
+
+<%- contentFor('body') %> <%-
 include("../_sidenav.ejs")%>
 
 <div class="contentContainer">
@@ -6,14 +9,14 @@ include("../_sidenav.ejs")%>
 
   <nav>
     <%- include("../../shared/_path.ejs", { crumbs: [
-      {path: '/operator',name:'Home'}, 
-      {path: '/operator/tickets', name:'Redes e Servidores'}
+      { path: '/operator', name:'Home' }, 
+      { path: '/operator/tickets', name:'Redes e Servidores' }
     ] })%>
   </nav>
 
-  <main class="operatorMain" id="operatorMain">
-    <%- include("./_top_priority_tickets.ejs")%> <%-
-    include("./_all_tickets_table.ejs")%>
+  <main class="operatorMain">
+    <%- include("./_top_priority_tickets.ejs") %> 
+    <%- include("./_all_tickets_table.ejs") %>
   </main>
 </div>
 

@@ -37,3 +37,8 @@
   padding: 0px;
   font-size: 18px;
 }
+
+.y_overflow_list {
+  flex-direction: column;
+  overflow-y: auto;
+}
