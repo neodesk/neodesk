@@ -29,7 +29,6 @@
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
-  /* resize: vertical; */
   height: 50vh;
   min-height: 150px;
   border-radius: 5px;
@@ -46,8 +45,6 @@
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: 0px 0px 5px 0px rgba(82, 79, 79, 0.5);
-  /* justify-content: stretch; */
-
 }
 
 .titleBar {

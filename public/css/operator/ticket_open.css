@@ -1,0 +1,120 @@
+.operatorMain {
+  background: #fff;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.devClass {
+  border: 2px solid tomato;
+  box-sizing: border-box;
+}
+
+.ticketData {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+}
+
+.userInfo {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.ticketInfo{
+  margin-top: 10px;
+}
+
+.dataHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.dataHead h3 {
+  font-size: 16px;
+  margin: 0px;
+}
+
+#titleHead {
+  background-color: #F5F6F7;
+  color: #aaaaaa;
+  padding: 5px 15px;
+  border-radius: 7px 7px 0px 0px;
+}
+
+#buttonHead {
+  padding: 5px;
+}
+
+.dataUser {
+  display: grid;
+  padding: 5px;
+  margin: 0px 10px;
+  background-color: #F5F6F7;
+  border-radius: 0px 7px 7px 7px;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: repeat(8, 25px);
+  align-items: center;
+}
+.dataTicket {
+  display: grid;
+  padding: 5px;
+  margin: 0px 10px;
+  background-color: #F5F6F7;
+  border-radius: 0px 7px 7px 7px;
+  /* grid-template-columns: 4fr 1fr; */
+  grid-template-rows: repeat(10, 25px);
+  align-items: center;
+}
+
+.dataConteiner {
+  display: flex;
+  height: 25px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.dataUserAvatar {
+  height: 70px;
+  width: 70px;
+  grid-column: 2/3;
+  grid-row: 1/4;
+  justify-self: center;
+}
+
+.dataUserAvatar img {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.label {
+  width: 100px;
+  margin-left: 5px;
+  padding: 2px;
+  padding-left: 5px;
+}
+
+.data {
+  width: calc(100% - 100px);
+  margin-left: 10px;
+  padding: 2px;
+  padding-left: 5px;
+  border: 1px solid #CBF2E2;
+  border-radius: 3px;
+  background-color: #f7ffff;
+  color: #6797CE;
+}
+
+#phone,
+#email,
+#unity,
+#location,
+#country {
+  grid-column: 1/3;
+}

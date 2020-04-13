@@ -38,8 +38,12 @@ routes.get('/operator', (req, res) => {
   res.render('operator/home');
 });
 
-routes.get('/operator/tickets', (req, res) => {
-  res.render('operator/tickets');
+routes.get('/operator/ticket', (req, res) => {
+  res.render('operator/ticket');
+});
+
+routes.get('/operator/ticket/open', (req, res) => {
+  res.render('operator/ticket_open');
 });
 
 routes.get('*', (req, res) => {
