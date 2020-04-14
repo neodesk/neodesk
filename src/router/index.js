@@ -50,6 +50,10 @@ router.get('/operator/users', (req, res) => {
   res.render('operator/users');
 });
 
+router.get('/operator/kanban', (req, res) => {
+  res.render('operator/kanban');
+});
+
 router.get('*', (req, res) => {
   return res.status(404).render('access/404');
 });

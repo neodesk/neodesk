@@ -1,0 +1,46 @@
+#kanbanMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kanban {
+  display: flex;
+  flex-direction: row;
+}
+
+#kanbanRow {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfdf;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#kanbanRowList {
+  display: flex;
+  flex-direction: column;
+}
+
+#kanbanTitle {
+  font-size: 22px;
+  color: #999;
+  text-align: center;
+}
+
+#kanbanRowList li {
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+#kanbanUserIcon {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 20px;
+  background-color: #dfdfdf;
+  border: 1px solid #333;
+}
