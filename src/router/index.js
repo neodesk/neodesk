@@ -50,6 +50,10 @@ router.get('/operator/tickets', (req, res) => {
   res.render('operator/tickets');
 });
 
+router.get('/operator/ticket/open', (req, res) => {
+  res.render('operator/ticket_open');
+});
+
 router.get('/operator/users', (req, res) => {
   res.render('operator/users');
 });
