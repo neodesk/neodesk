@@ -38,6 +38,10 @@ router.get('/user/ticket/new', (req, res) => {
   res.render('user/ticket')
 })
 
+router.get('/user/ticket/list', (req, res) => {
+  res.render('user/ticket_list')
+})
+
 router.get('/operator', (req, res) => {
   res.render('operator/home');
 });

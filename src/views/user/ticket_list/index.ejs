@@ -1,0 +1,77 @@
+<%- contentFor('title') %>
+Listagem de Chamados
+
+<%- contentFor('body') %> <%-
+include("../_sidenav.ejs")%>
+
+<div class="contentContainer">
+  <%- include("../_headbar.ejs")%>
+
+  <nav>
+    <%- include("../../shared/_path.ejs", { crumbs: [
+      {path: '/user', name:'Home'},
+      {path: '/user/subcategory', name:'TI'}
+    ] } )%>
+  </nav>
+
+  <main id="ticketListMain">
+    <div id="ticketListHeader">
+      <h2>Meus Chamados em Aberto</h2>
+      <div id="filter">
+        <span>filtro</span>
+        <i class="material-icons md-36 md-ligth">keyboard_arrow_down</i>
+      </div>
+    </div>
+    <ul id="ticketList">
+      <li>
+        <img src="/img/ti-bg.jpg" alt="ti">
+        <div id="ticketInfo">
+          <h2>Titulo do chamado</h2>
+          <p>Descricao do chamado</p>
+        </div>
+        <div id="date">Date 2020-03-03</div>
+        <div id="status">status</div>
+      </li>
+      <li>
+        <img src="/img/ti-bg.jpg" alt="ti">
+        <div id="ticketInfo">
+          <h2>Titulo do chamado</h2>
+          <p>Descricao do chamado</p>
+        </div>
+        <div id="date">Date 2020-03-10</div>
+        <div id="status">status</div>
+      </li>
+      <li>
+        <img src="/img/ti-bg.jpg" alt="ti">
+        <div id="ticketInfo">
+          <h2>Titulo do chamado</h2>
+          <p>Descricao do chamado</p>
+        </div>
+        <div id="date">Date</div>
+        <div id="status">status</div>
+      </li>
+      <li>
+        <img src="/img/ti-bg.jpg" alt="ti">
+        <div id="ticketInfo">
+          <h2>Titulo do chamado</h2>
+          <p>Descricao do chamado</p>
+        </div>
+        <div id="date">Date</div>
+        <div id="status">status</div>
+      </li>
+      <li>
+        <img src="/img/ti-bg.jpg" alt="ti">
+        <div id="ticketInfo">
+          <h2>Titulo do chamado</h2>
+          <p>Descricao do chamado</p>
+        </div>
+        <div id="date">Date</div>
+        <div id="status">status</div>
+      </li>
+    </ul>
+  </main>
+</div>
+
+<link rel="stylesheet" href="/css/user/home.css" type="text/css" />
+<link rel="stylesheet" href="/css/user/subcategory.css" type="text/css" />
+<link rel="stylesheet" href="/css/user/ticket_list.css" type="text/css" />

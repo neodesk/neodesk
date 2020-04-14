@@ -1,0 +1,110 @@
+#filter {
+  display: flex;
+  background-color: #333;
+  border-radius: 5px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 100px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#ticketListMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#ticketListHeader {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+#ticketListContainer {
+  background-color: aqua;
+}
+
+#ticketList {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+#ticketList li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+}
+
+#ticketList li:not(:last-child) {
+  border-bottom: 3px solid black;
+}
+
+#ticketList li:first-child {
+  border-radius: 30px 30px 0 0;
+}
+
+#ticketList li:last-child {
+  border-radius: 0 0 30px 30px;
+}
+
+#ticketList li:nth-child(even){
+  background-color: #2a8d56;
+}
+
+#ticketList li:nth-child(odd){
+  background-color: #333;
+}
+
+#ticketList img {
+  width: 130px;
+  height: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#ticketInfo {
+  margin-left: 20px;
+}
+
+#ticketInfo h2 {
+  font-size: 22px;
+}
+
+#ticketList li:first-child #date {
+  border-radius: 0 30px 0 30px;
+}
+
+#date:not(:first-child){
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 30px;
+  border-radius: 0 0 0 30px;
+  background-color: #f32;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px;
+  border-radius: 30px 0 0 0;
+  background-color: #da22ff;
+  height: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
