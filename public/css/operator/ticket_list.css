@@ -7,9 +7,13 @@
 .panel {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD:public/css/operator/styles.css
 
   resize: vertical;
   max-height: 70vh;
+=======
+  height: 50vh;
+>>>>>>> ticket_open_operator:public/css/operator/ticket_list.css
   min-height: 150px;
   border-radius: 5px;
   overflow: hidden;
