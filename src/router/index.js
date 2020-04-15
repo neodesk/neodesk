@@ -42,6 +42,10 @@ router.get('/user/ticket/list', (req, res) => {
   res.render('user/ticket_list')
 })
 
+router.get('/user/ticket/open', (req, res) => {
+  res.render('user/ticket_view')
+})
+
 router.get('/operator', (req, res) => {
   res.render('operator/home');
 });

@@ -1,0 +1,106 @@
+<%- contentFor('title') %>
+Visualização de Chamado
+
+<%- contentFor('body') %>
+<%- include("../_sidenav.ejs") %>
+
+<div class="contentContainer">
+  <%- include("../_headbar.ejs")%>
+
+  <nav>
+    <%- include("../../shared/_path.ejs", { crumbs: [
+      {path: '/user', name:'Home'},
+      {path: '/user/subcategory', name:'TI'},
+      {path: '#', name:'Acessos'},
+      {path: '/user/ticket', name:'Redes e Conectividade - WiFi'},
+  ] } )%>
+  </nav>
+
+  <main id="ticketViewMain">
+    <div>
+      <h1>Qual a senha do wifi?</h1>
+      <div id="chat">
+        <ul id="chatMessageList">
+          <li>
+            <div class="userMessage chatMessage">
+              <div class="userMessageInfo">
+                <span>Kallebe</span>
+                <span>2020-01-03TH23-M03-S03</span>
+              </div>
+              <div class="userMessageContent">
+                <p>Eae blz?</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="operatorMessage chatMessage">
+              <div class="operatorMessageInfo">
+                <span>Pedro</span>
+                <span>2020-01-03TH23-M04-S05</span>
+              </div>
+              <div>
+                <p>Message</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <form action="#" id="chatForm">
+          <label for="inputFile">
+            <i class="material-icons md-30 md-light">attach_file</i>
+          </label>
+          <input type="file" id="inputFile">
+          <textarea spellcheck="false" placeholder="Digite sua mensagem aqui"></textarea>
+          <button type="submit">
+            <i class="material-icons md-30 md-dark">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div>
+      <div id="ticketViewInfoContainer">
+        <img src="/img/icons/ti.svg" alt="ti icon">
+        <div id="ticketViewInfo">
+          <h3>Informacoes do Chamado</h3>
+          <ul>
+            <li>
+              <span class="ticketViewInfoAttribute">Status</span>
+              <span class="ticketViewInfoValue">ABERTO</span>
+            </li>
+            <li>
+              <span class="ticketViewInfoAttribute">Prioridade</span>
+              <span class="ticketViewInfoValue">Media</span>
+            </li>
+            <li>
+              <span class="ticketViewInfoAttribute">Tempo Aberto</span>
+              <span class="ticketViewInfoValue">1 hr</span>
+            </li>
+            <li>
+              <span class="ticketViewInfoAttribute">Dificuldade</span>
+              <span class="ticketViewInfoValue">Facil</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="ticketViewShareStatus">
+        <h3>Compartilhado com...</h3>
+        <ul>
+          <li>
+            <a href="#">Luis luis@gmail.com</a>
+          </li>
+          <li>
+            <a href="#">Pedro pedro@gmail.com</a>
+          </li>
+          <li>
+            <a href="#">Kallebe kallebe@gmail.com</a>
+          </li>
+          <li>
+            <a href="#">Laercio laercio@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+      <button id="ticketViewShareButton">Compartilhar solicitacao</button>
+    </div>
+  </main>
+</div>
+
+<link rel="stylesheet" href="/css/user/ticket_view.css" />
