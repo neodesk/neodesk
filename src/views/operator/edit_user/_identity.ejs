@@ -1,48 +1,50 @@
 <div class="col-12">
-  <div class="form_panel">
-    <div class="form_panel_title_bar">
-      <h4>Geral</h4>
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Geral</h4>
 
-      <i class="material-icons md-24 md-light">settings</i>
-    </div>
-    <% Array(3).fill().forEach((num) => { %>
+        <button type="submit" class="form_panel_save">
+          <i class="material-icons md-36 md-primary-light">save</i>
+        </button>
+      </div>
 
-    <div class="row p-0 m-1">
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
+      <div class="row p-0 m-0 mx-2">
+        <%- include("./identity_inputs/_avatar")%>
 
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x horas atrás.
-          </span>
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_first_name")%>
+
+          <%-include("./identity_inputs/_username")%>
+
+          <%- include("./identity_inputs/_language")%>
         </div>
 
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_last_name")%>
+          
+          <%- include("./identity_inputs/_email")%>
+          
+          <%- include("./identity_inputs/_date_of_birth")%>
         </div>
       </div>
 
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
+      <div class="row p-0 m-0 mx-2">
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_job_title")%>
 
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x dias atrás.
-          </span>
+          <%- include("./identity_inputs/_department")%>
         </div>
 
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_job_description")%>
+          
+          <%- include("./identity_inputs/_company")%>
         </div>
       </div>
-    </div>
 
-    <% }) %>
-  </div>
+    </div>
+  </form>
 </div>
 
 <link rel="stylesheet" href="/css/operator/home/_updates.css" />

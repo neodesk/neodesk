@@ -7,13 +7,11 @@ include("../_sidenav.ejs")%>
 <div class="contentContainer">
   <%- include("../_headbar.ejs")%>
 
-  <% const user = faker.helpers.contextualCard() %>
-
   <nav>
     <%- include("../../shared/_path.ejs", { crumbs: [ 
       { path: '/operator', name:'Home' },
       { path: '/operator/users', name:'Usuários' },
-      { path: '/operator/users/edit', name: user.name },
+      { path: '/operator/users/edit', name: `${firstName} ${lastName}` },
     ] })%>
   </nav>
 
