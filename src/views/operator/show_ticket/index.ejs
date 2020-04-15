@@ -1,0 +1,25 @@
+<%- contentFor('title') %>
+Operador
+
+<%- contentFor('body') %>
+<%-include("../_sidenav.ejs")%>
+
+<%- include("../_headbar.ejs")%>
+
+<div class="contentContainer">
+<nav>
+  <%- include("../../shared/_path.ejs", { crumbs: [
+    { path: '/operator', name:'Home' }, 
+    { path: '/operator/tickets', name:'Redes e Servidores' },
+    { path: '/operator/tickets/show', name: ticketTitle }
+  ] })%>
+</nav>
+
+  
+  <main class="operatorMain" id="operatorMain">
+    <%- include("./ticket_open.ejs")%>
+  </main>
+</div>
+
+<link rel="stylesheet" href="/css/operator/ticket_open.css" />
+<link rel="stylesheet" href="/css/operator/styles.css" />

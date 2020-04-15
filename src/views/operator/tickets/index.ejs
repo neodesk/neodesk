@@ -4,8 +4,9 @@ Operador
 <%- contentFor('body') %> <%-
 include("../_sidenav.ejs")%>
 
+<%- include("../_headbar.ejs")%>
+
 <div class="contentContainer">
-  <%- include("../_headbar.ejs")%>
 
   <nav>
     <%- include("../../shared/_path.ejs", { crumbs: [
@@ -13,10 +14,11 @@ include("../_sidenav.ejs")%>
       { path: '/operator/tickets', name:'Redes e Servidores' }
     ] })%>
   </nav>
+
   <main class="operatorMain">
     <%- include("./_top_priority_tickets.ejs") %>
     <%- include("./_all_tickets_table.ejs") %>
   </main>
 </div>
 
-<link rel="stylesheet" href="/css/operator/ticket_list.css" />
+<link rel="stylesheet" href="/css/operator/styles.css" />
