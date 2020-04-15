@@ -17,12 +17,12 @@
       - [x] Sub-Categoria
       - [x] Abertura de chamado
       - [ ] Listagem de chamados
-      - [ ] Visualizacao de chamado
+      - [x] Visualizacao de chamado
     - [ ] Operador:
       - [x] Dashboard
       - [x] Fila de Chamados
-      - [ ] Visualização do chamado
-      - [ ] Kanban
+      - [x] Visualização do chamado
+      - [x] Kanban
       - [x] Listagem de Usuarios e Operadores
       - [ ] Edição de Usuarios e Operadores
 - [ ] Uma vez feitas as telas Web, modificar o CSS para ficarem Mobile.
