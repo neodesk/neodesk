@@ -1,0 +1,10 @@
+<% const cardCount = Math.floor((Math.random() * 9) + 2); %>
+
+<div class="kanban_row">
+  <h1 class="kanban_column_title"><%= `${columnTitle} ${cardCount}` %></h1>
+    <% Array(cardCount).fill().forEach((num) => { %> 
+
+    <%- include("./_card.ejs")%>
+
+    <% }) %>
+</div>

@@ -7,8 +7,8 @@
   box-sizing: border-box;
 }
 
-*:focus{
-  outline:0;
+*:focus {
+  outline: 0;
 }
 
 html,
@@ -46,7 +46,8 @@ a:hover {
   color: var(--clr-aux-light);
 }
 
-ul {
+ul,
+ol {
   list-style: none;
 }
 

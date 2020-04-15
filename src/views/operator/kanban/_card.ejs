@@ -1,0 +1,25 @@
+<% const color1 = Math.floor((Math.random() * 7)); %>
+<% const color2 = Math.floor((Math.random() * 7)); %>
+<% const color3 = Math.floor((Math.random() * 7)); %>
+<% const colorArray = ['gray', 'success', 'info', 'danger', 'gold', 'secondary', 'primary-light']; %>
+
+
+<div class="card border-0 kanban_card">
+  <span class="kanban_card_title"><%= faker.lorem.words() %></span>
+  <span class="kanban_card_slug"><%= faker.lorem.word() %></span>
+
+  <div class="kanban_card_status">
+    <i class="material-icons md-36 md-<%= colorArray[color1] %>">assignment_late</i>
+    <i class="material-icons md-36 md-<%= colorArray[color2] %>">arrow_upward</i>
+    <i class="material-icons md-36 md-<%= colorArray[color3] %>">more_horiz</i>
+    <img
+      class="kanban_user_avatar shadow"
+      src="<%= faker.internet.avatar() %>"
+      alt="user"
+    />
+  </div>
+  
+  <span class="kanban_card_number">
+    <%= 'HC-' + faker.random.number() %>
+  </span>
+</div>

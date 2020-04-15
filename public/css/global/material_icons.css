@@ -76,13 +76,6 @@
   color: var(--clr-info-light);
 }
 
-.material-icons.md-info {
-  color: var(--clr-info);
-}
-.material-icons.md-info.md-inactive {
-  color: var(--clr-info-light);
-}
-
 .material-icons.md-danger {
   color: var(--clr-danger);
 }

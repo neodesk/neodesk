@@ -1,46 +1,72 @@
-#kanbanMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#kanban {
+.kanban_board {
   display: flex;
   flex-direction: row;
+  flex: 1;
+
+  align-items: flex-start;
+  justify-content: center;
 }
 
-#kanbanRow {
+.kanban_row {
   display: flex;
   flex-direction: column;
-  background-color: var(--clr-grey-10);
-  border-radius: 10px;
+
   margin: 10px;
   padding: 10px;
+  padding-bottom: 0;
+
+  border-radius: 15px;
+  background-color: var(--clr-grey-10);
 }
 
-#kanbanRowList {
-  display: flex;
-  flex-direction: column;
-}
-
-#kanbanTitle {
+.kanban_column_title {
   font-size: 22px;
   color: var(--clr-grey-0);
   text-align: center;
 }
 
-#kanbanRowList li {
-  background-color: #fdfdfd;
-  border-radius: 10px;
-  margin: 5px;
-  padding: 10px;
+.kanban_card {
+  width: 15rem;
+  margin-bottom: 10px;
 }
 
-#kanbanUserIcon {
-  height: 40px;
-  width: 40px;
-  object-fit: cover;
-  border-radius: 20px;
-  background-color: #dfdfdf;
-  border: 1px solid #333;
+.kanban_card_title {
+  margin-left: 10px;
+  margin-top: 10px;
+
+  color: var(--clr-primary);
+  font-size: 1.5em;
+}
+
+.kanban_card_slug {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+
+  color: var(--clr-grey-0);
+}
+
+.kanban_card_status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-bottom: 5px;
+}
+
+.kanban_user_avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+
+  border: 2px solid var(--clr-primary-light);
+}
+
+.kanban_card_number {
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  color: var(--clr-grey-0);
 }

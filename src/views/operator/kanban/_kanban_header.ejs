@@ -1,0 +1,32 @@
+<div class="kanban_header">
+
+  <div class="kanban_team">
+    <div>
+
+      <h2><%= faker.fake("{{name.jobArea}} - Equipe {{random.number}}") %></h2>
+    </div>
+  
+    <div class="kanban_icons">
+      <i class="material-icons md-36 md-primary-light kanban_icon">hourglass_empty</i>
+      <i class="material-icons md-36 md-primary-light kanban_icon">assignment_return</i>
+      <i class="material-icons md-36 md-primary-light kanban_icon">assignment_turned_in</i>
+      <i class="material-icons md-36 md-primary-light kanban_icon">favorite_border</i>
+      <i class="material-icons md-36 md-primary-light kanban_icon">share</i>
+      <i class="material-icons md-36 md-primary-light kanban_icon">more_horiz</i>
+    </div>
+  </div>
+  
+    <div class="kanban_team_members">
+      <% Array(8).fill().forEach((num) => { %> 
+  
+      <img
+        class="kanban_team_member_avatar shadow"
+        src="<%= faker.internet.avatar() %>"
+        alt="user"
+      >
+  
+      <% }) %>
+    </div>
+</div>
+
+  <link rel="stylesheet" href="/css/operator/kanban/_kanban_header.css">
