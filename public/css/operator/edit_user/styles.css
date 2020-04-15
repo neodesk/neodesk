@@ -19,12 +19,12 @@
   justify-content: space-between;
 
   padding: 0 15px;
-  height: 40px;
-  min-height: 40px;
+  height: 45px;
+  min-height: 45px;
 }
 
 .form_panel_title {
-  margin: 0px;
+  margin: 5px 0 0 0;
   padding: 0px;
   font-size: 18px;
   text-transform: uppercase;
