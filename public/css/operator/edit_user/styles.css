@@ -1,0 +1,101 @@
+.form_panel {
+  display: flex;
+  flex-direction: column;
+
+  resize: vertical;
+  max-height: 70vh;
+  min-height: 150px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  box-shadow: 0px 0px 5px 0px rgba(82, 79, 79, 0.5);
+  background-color: var(--clr-grey-10);
+}
+
+.form_panel_title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 15px;
+  height: 45px;
+  min-height: 45px;
+}
+
+.form_panel_title {
+  margin: 5px 0 0 0;
+  padding: 0px;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  color: var(--clr-grey-0);
+}
+
+.form_panel_title_bar_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_panel_save {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+}
+
+.user_avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+  border: 3px solid var(--clr-primary-light);
+  box-shadow: 0px 0px 5px 0px rgba(82, 79, 79, 0.5);
+}
+
+.edit_user_avatar {
+  position: absolute;
+  left: 100px;
+  top: 45px;
+}
+
+.form_panel_label {
+  font-size: 1.15em;
+  color: var(--clr-primary-light);
+}
+
+.form_panel_text_input {
+  margin-top: 2px;
+}
+
+/* Inclusion List */
+
+.inclusion_list {
+  margin: 0 15px 10px 15px;
+}
+
+.inclusion_list_row {
+  background-color: var(--clr-main-light);
+}
+
+.inclusion_list_row:nth-child(even) {
+  background-color: var(--clr-info-light);
+}
+
+.inclusion_list div:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.inclusion_list div:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.inclusion_list_item_name {
+  margin-left: 5px;
+
+  font-size: 1.5em;
+  color: var(--clr-main);
+}

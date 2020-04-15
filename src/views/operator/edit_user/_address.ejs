@@ -1,0 +1,36 @@
+<div class="col-12">
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Endereço</h4>
+
+        <button type="submit" class="form_panel_save">
+          <i class="material-icons md-36 md-primary-light">save</i>
+        </button>
+      </div>
+
+      <div class="row p-0 m-0 mx-2">
+        <div class="col px-1 py-0 m-1">
+          <%- include("./address_inputs/_street")%>
+
+          <%-include("./address_inputs/_neighborhood")%>
+
+          <%-include("./address_inputs/_state")%>
+
+          <%-include("./address_inputs/_zip_code")%>
+        </div>
+
+        <div class="col px-1 py-0 m-1">
+          <%- include("./address_inputs/_number")%>
+          
+          <%- include("./address_inputs/_city")%>
+
+          <%- include("./address_inputs/_country")%>
+
+          <%- include("./address_inputs/_reference_point")%>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

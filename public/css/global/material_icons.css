@@ -48,12 +48,11 @@
   color: #AAAAAA55;
 }
 
-
-.material-icons.md-success {
-  color: var(--clr-success);
+.material-icons.md-primary-light {
+  color: #6797ceFF;
 }
-.material-icons.md-success.md-inactive {
-  color: var(--clr-success-light);
+.material-icons.md-primary-light.md-inactive {
+  color: #6797ce55;
 }
 
 .material-icons.md-secondary {
@@ -61,6 +60,13 @@
 }
 .material-icons.md-secondary.md-inactive {
   color: #617d9855;
+}
+
+.material-icons.md-success {
+  color: var(--clr-success);
+}
+.material-icons.md-success.md-inactive {
+  color: var(--clr-success-light);
 }
 
 .material-icons.md-info {
