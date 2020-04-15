@@ -7,4 +7,3 @@ app.listen(port);
 
 opn(`http://localhost:${port}/`)
 console.log(`👂Listening on ⚓port ${port}...`);
-
