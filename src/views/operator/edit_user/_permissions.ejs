@@ -1,48 +1,35 @@
 <div class="col-12">
-  <div class="form_panel">
-    <div class="form_panel_title_bar">
-      <h4>Permissões</h4>
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Permissões</h4>
 
-      <i class="material-icons md-24 md-gray">settings</i>
-    </div>
-    <% Array(3).fill().forEach((num) => { %>
+        <div class="form_panel_title_bar_icons">
+          <i class="material-icons md-36 md-primary-light"
+            >remove_circle_outline</i
+          >
+          <i class="material-icons md-36 md-primary-light"
+            >add_circle_outline</i
+          >
 
-    <div class="row p-0 m-1">
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
-
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x horas atrás.
-          </span>
-        </div>
-
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
+          <button type="submit" class="form_panel_save">
+            <i class="material-icons md-36 md-primary-light">save</i>
+          </button>
         </div>
       </div>
 
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
+      <div class="inclusion_list">
+        <% Array(20).fill().forEach((num) => { %>
 
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x dias atrás.
+        <div class="inclusion_list_row">
+          <span class="inclusion_list_item_name">
+            <%= faker.lorem.word() %>
           </span>
         </div>
 
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
-        </div>
+        <% }) %>
+
       </div>
     </div>
-
-    <% }) %>
-  </div>
+  </form>
 </div>
-
-<link rel="stylesheet" href="/css/operator/home/_updates.css" />

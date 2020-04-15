@@ -32,6 +32,13 @@
   color: var(--clr-grey-0);
 }
 
+.form_panel_title_bar_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .form_panel_save {
   display: flex;
   align-items: center;
@@ -62,4 +69,33 @@
 
 .form_panel_text_input {
   margin-top: 2px;
+}
+
+/* Inclusion List */
+
+.inclusion_list {
+  margin: 0 15px 10px 15px;
+}
+
+.inclusion_list_row {
+  background-color: var(--clr-main-light);
+}
+
+.inclusion_list_row:nth-child(even) {
+  background-color: var(--clr-info-light);
+}
+
+.inclusion_list div:first-child {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.inclusion_list div:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.inclusion_list_item_name {
+  margin-left: 5px;
+
+  font-size: 1.5em;
+  color: var(--clr-main);
 }
