@@ -12,7 +12,7 @@
 #kanbanRow {
   display: flex;
   flex-direction: column;
-  background-color: #dfdfdf;
+  background-color: var(--clr-grey-10);
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
@@ -25,7 +25,7 @@
 
 #kanbanTitle {
   font-size: 22px;
-  color: #999;
+  color: var(--clr-grey-0);
   text-align: center;
 }
 
