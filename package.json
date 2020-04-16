@@ -11,7 +11,6 @@
     "dev": "nodemon src/server.js",
     "dev:debug": "nodemon --inspect src/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports",
-    "start": "node dist/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
