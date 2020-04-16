@@ -1,1 +1,1 @@
-web: cp .env.production .env && npm run build && cp -r src/views dist/views && node dist/server.js 
+web: cp .env.production .env && npm run build && cp -r src/views dist/views && node run start
