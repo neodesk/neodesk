@@ -8,38 +8,10 @@
     <% Array(3).fill().forEach((num) => { %>
 
     <div class="row p-0 m-1">
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
 
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x horas atrás.
-          </span>
-        </div>
+      <%- include("./_update.ejs")%>
 
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
-        </div>
-      </div>
-
-      <div class="col px-2 py-2 m-1 update">
-        <div class="update_info">
-          <a href="#" class="update_title">
-            <%= faker.fake("{{lorem.words}}?") %>
-          </a>
-
-          <span class="update_timestamp">
-            <%= new Date(faker.date.past()).toLocaleString() %>, x dias atrás.
-          </span>
-        </div>
-
-        <div class="two_line_text update_content">
-          <%= faker.lorem.paragraphs() %>
-        </div>
-      </div>
-    </div>
+      <%- include("./_update.ejs")%>
 
     <% }) %>
   </div>
