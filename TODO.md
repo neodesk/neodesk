@@ -18,7 +18,7 @@
       - [x] Abertura de chamado
       - [x] Listagem de chamados
       - [x] Visualizacao de chamado
-    - [ ] Operador:
+    - [x] Operador:
       - [x] Dashboard
       - [x] Fila de Chamados
       - [x] Visualização do chamado

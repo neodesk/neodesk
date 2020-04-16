@@ -1,43 +1,30 @@
-<section class="services">
-  <div class="service">
-    <img src="/img/icons/ti.svg" alt="TI icon" />
-
-    <a href="/user/subcategory">TI</a>
+<section class="col-10">
+  <div class="row">
+      <%- include("./_service.ejs", { title: 'Meus chamados', icon: 'assignment_ind' }) %>
+      <%- include("./_service.ejs", { title: 'Compartilhados', icon: 'share' }) %>
+      <%- include("./_service.ejs", { title: 'Suporte', icon: 'headset_mic' }) %>
+      <%- include("./_service.ejs", { title: 'Juridico', icon: 'gavel' }) %>
+      <%- include("./_service.ejs", { title: 'Manutenção', icon: 'build' }) %>
+      <%- include("./_service.ejs", { title: 'Apoio', icon: 'accessible_forward' }) %>
   </div>
 
-  <div class="service">
-    <img src="/img/icons/rh.svg" alt="TI icon" />
-
-    <a href="#">Recursos Humanos</a>
+  <div class="row">
+    <%- include("./_service.ejs", { title: 'Financeiro', icon: 'insert_chart_outlined' }) %>
+    <%- include("./_service.ejs", { title: 'Logistica', icon: 'local_shipping' }) %>
+    <%- include("./_service.ejs", { title: 'Segurança', icon: 'vpn_key' }) %>
+    <%- include("./_service.ejs", { title: 'Vendas', icon: 'local_grocery_store' }) %>
+    <%- include("./_service.ejs", { title: 'Arquitetura', icon: 'location_city' }) %>
+    <%- include("./_service.ejs", { title: 'Desenvolvimento', icon: 'code' }) %>
   </div>
 
-  <div class="service">
-    <img src="/img/icons/support.svg" alt="TI icon" />
-
-    <a href="#">Suporte</a>
-  </div>
-
-  <div class="service">
-    <img src="/img/icons/my_calls.svg" alt="TI icon" />
-
-    <a href="#">Meus Chamados</a>
-  </div>
-
-  <div class="service">
-    <img src="/img/icons/logistic.svg" alt="TI icon" />
-
-    <a href="#">Logistica</a>
-  </div>
-
-  <div class="service">
-    <img src="/img/icons/maintence.svg" alt="TI icon" />
-
-    <a href="#">Manutencao</a>
-  </div>
-
-  <div class="service">
-    <img src="/img/icons/international.svg" alt="TI icon" />
-
-    <a href="#">International</a>
+  <div class="row">
+    <%- include("./_service.ejs", { title: 'Infraestrutura', icon: 'settings_input_component' }) %>
+    <%- include("./_service.ejs", { title: 'Marketing', icon: 'view_carousel' }) %>
+    <%- include("./_service.ejs", { title: 'TI', icon: 'keyboard' }) %>
+    <%- include("./_service.ejs", { title: 'Recursos Humanos', icon: 'folder_shared' }) %>
+    <%- include("./_service.ejs", { title: 'Promotoria', icon: 'movie_filter' }) %>
+    <%- include("./_service.ejs", { title: 'BI', icon: 'school' }) %>
   </div>
 </section>
+
+<link rel="stylesheet" href="/css/user/shared/_services.css" />

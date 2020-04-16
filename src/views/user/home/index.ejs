@@ -1,4 +1,7 @@
-<%- contentFor('title') %> Home <%- contentFor('body') %> <%-
+<%- contentFor('title') %>
+Home
+
+<%- contentFor('body') %> <%-
 include("../_sidenav.ejs")%>
 
 <div class="contentContainer">
@@ -6,14 +9,15 @@ include("../_sidenav.ejs")%>
 
   <nav>
     <%- include("../../shared/_path.ejs", { crumbs: [
-      {path: '/user', name:'Home'}
+      { path: '/user', name:'Home' }
     ] } )%>
   </nav>
 
-  <main>
-    <div class="servicesContainer">
-      <%- include("./_services.ejs") %> <%- include("./_misc_information.ejs")
-      %>
+  <main class="user_main">
+    <div class="menu_container">
+      <%- include("./_services.ejs") %>
+
+      <%- include("./_misc_information.ejs") %>
     </div>
   </main>
 </div>

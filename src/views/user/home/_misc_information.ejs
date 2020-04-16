@@ -1,17 +1,31 @@
-<aside class="infoContainer">
+<aside class="info_container">
   <div class="info">
-    <div class="infoTitle">
-      <h3>Problemas generalizados</h3>
-    </div>
+    <span class="info_title">Problemas generalizados</span>
 
-    <div></div>
+    <div class="updates y_overflow_list">
+      <% Array(14).fill().forEach((num) => { %>
+
+      <div class="update">
+        <a href="#" class="update_title"><%= faker.lorem.words() %></a>
+      </div>
+
+      <% }) %>
+    </div>
   </div>
 
   <div class="info">
-    <div class="infoTitle">
-      <h3>Atualizacoes</h3>
-    </div>
+    <span class="info_title">Atualizações</span>
 
-    <div></div>
+    <div class="updates y_overflow_list">
+      <% Array(14).fill().forEach((num) => { %>
+
+      <div class="update">
+        <a href="#" class="update_title"><%= faker.lorem.words() %></a>
+      </div>
+
+      <% }) %>
+    </div>
   </div>
 </aside>
+
+<link rel="stylesheet" href="/css/user/shared/_misc_information.css" />

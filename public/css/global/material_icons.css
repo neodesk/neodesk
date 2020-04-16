@@ -26,6 +26,15 @@
 .material-icons.md-72 {
   font-size: 72px;
 }
+.material-icons.md-100 {
+  font-size: 100px;
+}
+.material-icons.md-125 {
+  font-size: 125px;
+}
+.material-icons.md-150 {
+  font-size: 150px;
+}
 
 .material-icons.md-dark {
   color: rgba(0, 0, 0, 0.54);
