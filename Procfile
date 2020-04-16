@@ -1,1 +1,1 @@
-web: cp .env.production .env && npm run build && cp -rf src/views dist/views && npm run start
+web: npm run start
