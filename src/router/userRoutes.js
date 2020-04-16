@@ -6,6 +6,10 @@ userRoutes.get('/', (req, res) => {
   res.render('user/home');
 });
 
+userRoutes.get('/category', (req, res) => {
+  res.render('user/category');
+});
+
 userRoutes.get('/subcategory', (req, res) => {
   res.render('user/subcategory');
 });

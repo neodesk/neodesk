@@ -9,14 +9,15 @@ include("../_sidenav.ejs")%>
 
   <nav>
     <%- include("../../shared/_path.ejs", { crumbs: [
-      { path: '/user', name:'Home' }
+      { path: '/user', name:'Home' },
+      { path: '/user/category', name:'TI' },
     ] } )%>
   </nav>
-
+  
   <h3 class="user_guide">
-    Seja bem vindo <%= faker.name.firstName() %>!
+    Selecione a categoria do seu chamado...
   </h3>
-
+  
   <main class="user_main">
     <div class="menu_container">
       <%- include("./_services.ejs") %>

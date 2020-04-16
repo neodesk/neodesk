@@ -6,6 +6,11 @@
   min-height: 90vh;
 }
 
+.user_guide {
+  margin-left: 15px;
+  color: var(--clr-primary);
+}
+
 .menu_container {
   margin: 0;
   display: flex;

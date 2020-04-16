@@ -10,10 +10,10 @@
     - [x] Header do Operador
     - [x] Menu Lateral do Operador
     - [x] Tela 404 e 500
-  - [ ] Conteudo das telas:
-    - [ ] Usuario:
+  - [x] Conteudo das telas:
+    - [x] Usuario:
       - [x] Departamento
-      - [ ] Categoria
+      - [x] Categoria
       - [x] Sub-Categoria
       - [x] Abertura de chamado
       - [x] Listagem de chamados
