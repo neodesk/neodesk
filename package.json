@@ -19,13 +19,13 @@
     "ejs": "^3.0.1",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
-    "opn": "^6.0.0"
+    "opn": "^6.0.0",
+    "sucrase": "^3.12.1",
+    "youch": "^2.0.10",
+    "faker": "^4.1.0"
   },
   "devDependencies": {
-    "faker": "^4.1.0",
     "nodemon": "^2.0.2",
-    "prettier": "^2.0.2",
-    "sucrase": "^3.12.1",
-    "youch": "^2.0.10"
+    "prettier": "^2.0.2"
   }
 }
