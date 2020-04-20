@@ -5,6 +5,7 @@
 - [ ] Modelagems individuais do banco
 - [ ] Discução das regra de negócio e da modelagem
 - [ ] Unificação em um arquivo .mwb (MySQL Workbench)
+- [ ] Ciração de seeds para cada entidades
 
 ### Disitribuição do trabalho
 
