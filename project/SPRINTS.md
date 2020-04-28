@@ -12,16 +12,6 @@
   - [x] Jornada de usuario (categorizar e interagir em chamados)
   - [x] Interacao basica para o operador (abrir chamado em seu nome, responder e fechar)
 
-### MVP:
-
-- Usuario categorizar e abrir um chamado
-- Usuario visualizar chamados abertos e interagir
-- Operador Visualizar filas e chamados
-- Operador interagir nos chamados
-- Sistema de notificacoes nos dois lados (notificacoes internas e e-mail)
-- Papeis de usuario
-- COM REACT - Abas de navegacao interna na area do operador
-
 ### Extras:
 
 - Relatorios de chamados/incidentes
@@ -66,5 +56,21 @@ Kallebe: Sub-categoria (Usuario), Abertura de chamado (Usuario), Listagem de Usu
 Pedro: Header do Operador, Fila de Chamados (Operador), Visualização do chamado (Operador), Painel Kanban (Operador)
 Luis: Tela 404 e 500, Dashboard (Operador), Listagem de chamado (Usuario), Edição de Usuarios e Operadores (Operador), Categoria (Usuario)
 Laercio (se consegui): Visualização de chamado (Usuario)
+
+<br/>
+
+# Quarta Sprint
+
+## Pra Fazer
+
+- [x] Modelagems individuais do banco
+- [x] Discução das regra de negócio e da modelagem
+- [x] Unificação em um arquivo .mwb (MySQL Workbench)
+
+### Disitribuição do trabalho
+
+Faremos individualmente um rascunho da modelagem do banco de dados no MySQL
+Workbench. Teremos um encontro de zoom neste domingo para discutir as modelagems
+e unifica-las em uma.
 
 <br/>
