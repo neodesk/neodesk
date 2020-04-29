@@ -8,6 +8,8 @@ import cors from 'cors';
 import router from './router';
 import youch from './config/youch';
 
+import './database';
+
 class App {
   constructor() {
     this.server = express();
