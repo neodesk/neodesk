@@ -22,15 +22,15 @@ module.exports = {
       updated_at: {
         type: Sequelize.DATE,
       },
-      sucategories_id: {
+      subcategories_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      sucategories_categories_id: {
+      subcategories_categories_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      sucategories_categories_departments_id: {
+      subcategories_categories_departments_id: {
         type: Sequelize.INTEGER,
         allowNull: false,
       },

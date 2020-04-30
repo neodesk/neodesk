@@ -8,6 +8,9 @@ export default class Ticket extends Model {
         description: DataTypes.STRING,
         main_ticket: DataTypes.INTEGER,
         status: DataTypes.INTEGER,
+        user_id: DataTypes.INTEGER,
+        user_address_id: DataTypes.INTEGER,
+        user_organization_id: DataTypes.INTEGER,
       },
       {
         sequelize,
@@ -16,18 +19,16 @@ export default class Ticket extends Model {
     );
   }
 
-  static associate(models) {
-    this.hasOne(models.Type, {
+  static async associate(models) {
+    await this.belongsTo(models.Type, {
       foreignKey: 'type_id',
       as: 'ticket_type',
     });
-    this.hasOne(models.ServiceLevelAgreement, {
+    await this.belongsTo(models.ServiceLevelAgreement, {
       foreignKey: 'service_level_agreements_id',
-      as: 'ticket_service_level',
     });
-    this.hasOne(models.OperatorGroup, {
+    await this.belongsTo(models.OperatorGroup, {
       foreignKey: 'operator_groups_id',
-      as: 'ticket_operator_group',
     });
   }
 }

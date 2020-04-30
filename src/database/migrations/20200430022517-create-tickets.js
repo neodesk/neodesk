@@ -32,7 +32,6 @@ module.exports = {
       },
       type_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
         primaryKey: true,
         references: {
           model: 'types',
@@ -40,16 +39,17 @@ module.exports = {
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
+        allowNull: false,
       },
       service_level_agreements_id: {
         type: Sequelize.INTEGER,
-        allowNull: false,
         references: {
           model: 'service_level_agreements',
           key: 'id',
         },
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
+        allowNull: false,
       },
       user_id: {
         type: Sequelize.INTEGER,

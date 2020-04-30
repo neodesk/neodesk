@@ -1,5 +1,7 @@
 import { Router } from 'express';
 
+import TicketController from '../controllers/TicketController';
+
 const userRoutes = Router();
 
 userRoutes.get('/', (req, res) => {
@@ -17,6 +19,8 @@ userRoutes.get('/subcategory', (req, res) => {
 userRoutes.get('/tickets/new', (req, res) => {
   res.render('user/new_ticket');
 });
+
+userRoutes.post('/tickets/new', TicketController.create);
 
 userRoutes.get('/tickets', (req, res) => {
   res.render('user/tickets');

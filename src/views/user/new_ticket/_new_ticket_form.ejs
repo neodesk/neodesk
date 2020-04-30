@@ -1,22 +1,23 @@
 <section class="contentRow">
   <div class="sectionDivision">
     <form action="#" method="POST">
-      <input type="text" placeholder="Título *" />
-      <input type="text" placeholder="Disponibilidade *" />
-      <input type="text" placeholder="Tipo de chamado *" />
-      <input type="text" placeholder="Nome da empresa (Terceiro)" />
-      <input type="text" placeholder="CNPJ" />
-      <input type="text" placeholder="Usuário de Rede *" />
+      <input name="title" type="text" placeholder="Título *" />
+      <input
+        name="group_name"
+        type="text"
+        placeholder="Nome da empresa (Terceiro)"
+      />
+      <input name="cnpj" type="text" placeholder="CNPJ" />
       <textarea
         placeholder="Ticket message"
-        name=""
+        name="description"
         id=""
         cols="30"
         rows="10"
       ></textarea>
       <button>Anexar arquivo</button>
       <button>Compartilhar solicitação</button>
-      <button>SUBMIT</button>
+      <button type="submit">SUBMIT</button>
     </form>
   </div>
 </section>
