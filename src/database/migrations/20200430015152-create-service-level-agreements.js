@@ -10,7 +10,7 @@ module.exports = {
         autoIncrement: true,
       },
       time: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.TIME,
         allowNull: false,
       },
       priority: {
