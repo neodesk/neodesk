@@ -26,9 +26,11 @@ export default class Ticket extends Model {
     });
     await this.belongsTo(models.ServiceLevelAgreement, {
       foreignKey: 'service_level_agreements_id',
+      as: 'ticket_service_level_agreement',
     });
     await this.belongsTo(models.OperatorGroup, {
       foreignKey: 'operator_groups_id',
+      as: 'ticket_operator_group',
     });
   }
 }

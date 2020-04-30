@@ -10,6 +10,7 @@ export default class ServiceLevelAgreement extends Model {
       {
         sequelize: connection,
         tableName: 'service_level_agreements',
+        timestamps: false,
       }
     );
   }
