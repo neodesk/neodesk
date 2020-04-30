@@ -80,6 +80,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('');
+    return queryInterface.dropTable('tickets');
   },
 };

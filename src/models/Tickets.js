@@ -17,17 +17,17 @@ class Ticket extends Model {
   }
 
   static associate(models) {
-    this.belongsTo(models.Type, {
-      foreignKey: 'id',
+    this.hasOne(models.Type, {
+      foreignKey: 'type_id',
       as: 'ticket_type',
     });
-    this.belongsTo(models.ServiceLevelAgreement, {
-      foreignKey: 'id',
-      as: 'service_level',
+    this.hasOne(models.ServiceLevelAgreement, {
+      foreignKey: 'service_level_agreements_id',
+      as: 'ticket_service_level',
     });
-    this.belongsTo(models.OperatorGroup, {
-      foreignKey: 'id',
-      as: 'operator_group',
+    this.hasOne(models.OperatorGroup, {
+      foreignKey: 'operator_groups_id',
+      as: 'ticket_operator_group',
     });
   }
 }
