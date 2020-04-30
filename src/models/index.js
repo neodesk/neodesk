@@ -18,7 +18,8 @@ const fileNames = readdirSync(__dirname).filter(
   para o array models
 */
 const models = fileNames.map((file) => {
-  return require(join(__dirname, file)).default;
+  const model = require(join(__dirname, file));
+  return model.default;
 });
 
 console.info(`Successfully imported models: ${fileNames.join(', ')}`);

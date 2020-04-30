@@ -24,10 +24,13 @@ class Database {
 
   loadModels() {
     models
-      .map((model) => model.init(this.connection))
-      .map(
-        (model) => model.associate && model.associate(this.connection.models)
-      );
+      .map((model) => {
+        model.init(this.connection);
+        return model;
+      })
+      .map((model) => {
+        !!model && !!model.associate && model.associate(this.connection.models);
+      });
   }
 }
 

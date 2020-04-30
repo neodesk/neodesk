@@ -1,6 +1,6 @@
 import { Model, DataTypes } from 'sequelize';
 
-class Type extends Model {
+export default class Type extends Model {
   static init(sequelize) {
     super.init(
       {
@@ -14,5 +14,3 @@ class Type extends Model {
     );
   }
 }
-
-export default Type;
