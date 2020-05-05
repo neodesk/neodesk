@@ -11,6 +11,7 @@ header .searchBar {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
 }
 
 header .searchBar input {
@@ -29,6 +30,11 @@ header .searchBar button {
   border-radius: 0 5px 5px 0;
   padding: 0 5px;
   transition: background-color 0.5s;
+  height: 100%;
+}
+
+header .searchBar button:focus {
+  outline: none;
 }
 
 header .searchBar button:hover {

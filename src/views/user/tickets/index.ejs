@@ -18,7 +18,7 @@ include("../_sidenav.ejs")%>
       </div>
     </div>
     <ul id="ticketList">
-      <% tickets.forEach(ticket => { %>
+      <% if(tickets.length > 0) { %> <% tickets.forEach(ticket => { %>
       <li>
         <img src="/img/ti-bg.jpg" alt="ti" />
         <div id="ticketInfo">
@@ -26,9 +26,11 @@ include("../_sidenav.ejs")%>
           <p><%= ticket.description %></p>
         </div>
         <div id="date"><%= ticket.updatedAt %></div>
-        <div id="status"><%= ticket.status %></div>
+        <div id="status">Status <%= ticket.status %></div>
       </li>
-      <% }) %>
+      <% }) %> <% } else { %>
+      <h1>Nao tem tickets aqui :(</h1>
+      <% } %>
     </ul>
   </main>
 </div>

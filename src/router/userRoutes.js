@@ -22,11 +22,7 @@ userRoutes.get('/tickets/new', (req, res) => {
 
 userRoutes.post('/tickets/new', TicketController.create);
 
-userRoutes.get('/tickets', (req, res) => {
-  res.render('user/tickets', {
-    tickets: [],
-  });
-});
+userRoutes.get('/tickets', TicketController.index);
 
 userRoutes.get('/tickets/show', (req, res) => {
   res.render('user/show_ticket');
