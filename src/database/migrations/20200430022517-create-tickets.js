@@ -65,6 +65,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
+        // Incluir references
       },
       operator_groups_id: {
         type: Sequelize.INTEGER,

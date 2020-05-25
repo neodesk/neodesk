@@ -29,7 +29,7 @@
 
 ### Disitribuição do trabalho
 
-Luis - Login, Autenticação e Edição de Usuários
-Kallebe - Histórico de Tickets do Usuário
-Pedro - Fila de Grupos de Operadores
-Quem Conseguir - Categorização e Abertura de Tickets do Usuário
+- Luis - Login, Autenticação e Edição de Usuários
+- Kallebe - Histórico de Tickets do Usuário
+- Pedro - Fila de Grupos de Operadores
+- Quem Conseguir - Categorização e Abertura de Tickets do Usuário
