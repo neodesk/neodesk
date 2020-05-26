@@ -2,21 +2,22 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('organizations', {
+    return queryInterface.createTable('commercial_contacts', {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
       },
-      name: {
-        type: Sequelize.TEXT
-      },
-      description: {
+      primary_email: {
         type: Sequelize.STRING(256),
+        allowNull: false
       },
-      type: {
+      landline_number: {
         type: Sequelize.STRING(45),
+      },
+      extension: {
+        type: Sequelize.INTEGER,
       },
       created_at: {
         type: Sequelize.DATE,
@@ -24,14 +25,9 @@ module.exports = {
       updated_at: {
         type: Sequelize.DATE,
       },
-      address_id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        allowNull: false,
-      },
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('organizations');
-  },
+    return queryInterface.dropTable('commercial_contacts');
+  }
 }
