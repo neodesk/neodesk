@@ -15,6 +15,18 @@ Depois instalamos as dependencias do projeto:
 $ npm install
 ```
 
+(OPCIONAL) Criamos um container de postgres no Docker:
+
+```bash
+$ docker run --name postgres -e POSTGRES_PASSWORD=postgres -p 5432:5432 -d -t postgres
+```
+
+Criamos e migramos a base de dados:
+
+```bash
+$ npx sequelize db:create db:migrate
+```
+
 Finalmente rodamos o script definido em `package.json`:
 
 ```bash
@@ -48,6 +60,14 @@ $ npm run dev
   [Cross-Origin Resource Sharing](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Controle_Acesso_CORS),
   permitindo a transferência de dados entre dominios web diferentes de uma
   maneira segura.
+
+- [celebrate](https://github.com/arb/celebrate): middleware de validação de dados.
+
+- [sequelizeV5](https://github.com/sequelize/sequelize/): Nos premite interagir
+  com a base de dados sem ter que escrever SQL.
+
+- [sequelize-cli](https://github.com/sequelize/cli): Nos permite interagir com o
+  Sequelize para fazer migrações, seed, etc.
 
 ### Ambiente de desenvolvimento
 

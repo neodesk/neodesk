@@ -1,4 +1,16 @@
-# Quinta Sprint
+# Quinta Sprint - Backend
+
+## Datas
+
+### Entrega Parcial (26/05):
+
+- Autenticação
+- Middlewares (controle de acesso)
+- Migrations (construção do banco de dados);
+
+### Entrega Final (02/06):
+
+- CRUD da aplicação
 
 ## MVP:
 
@@ -25,7 +37,6 @@
   - [ ] Model Sub-Categoria
 - [ ] Fila de Grupos de Operadores:
   - [ ] Model de Grupos de Operadores
-
 
 ### Disitribuição do trabalho
 
