@@ -21,19 +21,7 @@ module.exports = {
       },
       updated_at: {
         type: Sequelize.DATE,
-      },
-      subcategories_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      subcategories_categories_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
-      subcategories_categories_departments_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-      },
+      }
     });
   },
 

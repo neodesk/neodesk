@@ -56,19 +56,6 @@ module.exports = {
       },
       updated_at: {
         type: Sequelize.DATE,
-      },
-      address_id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-      },
-      organization_id: {
-        type: Sequelize.INTEGER,
-        primaryKey: true,
-        allowNull: false,
-      },
-      job_id: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
       }
     });
   },
