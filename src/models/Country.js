@@ -3,14 +3,15 @@ import {
   DataTypes
 } from 'sequelize';
 
-export default class Role extends Model {
+export default class Country extends Model {
   static init(sequelize) {
     super.init({
       name: DataTypes.STRING,
-      description: DataTypes.TEXT,
+      letter_code: DataTypes.STRING,
+      calling_code: DataTypes.STRING,
     }, {
       sequelize,
-      tablename: 'roles',
+      tablename: 'countries',
     });
   }
 }

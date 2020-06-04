@@ -13,14 +13,26 @@ export default class User extends Model {
         cellphone_number: DataTypes.STRING,
         landline: DataTypes.STRING,
         extension: DataTypes.INTEGER,
-        address_id: DataTypes.INTEGER,
-        organization_id: DataTypes.INTEGER,
-        job_id: DataTypes.INTEGER,
       },
       {
         sequelize,
         tablename: 'users',
       }
     );
+  }
+
+  static async associate(models) {
+    await this.belongsTo(models.Address, {
+      foreignKey: 'address_id',
+      as: 'operator_address',
+    });
+    await this.belongsTo(models.Organization, {
+      foreignKey: 'organization_id',
+      as: 'operator_organization',
+    });
+    await this.belongsTo(models.Job, {
+      foreignKey: 'job_id',
+      as: 'operator_job',
+    });
   }
 }
