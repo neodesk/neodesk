@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import faker from 'faker';
+import ShowUsersController from '../controllers/ShowUsersController';
 
 const operatorRoutes = Router();
 
@@ -17,9 +18,7 @@ operatorRoutes.get('/tickets/show', (req, res) => {
   res.render('operator/show_ticket', { ticketTitle });
 });
 
-operatorRoutes.get('/users', (req, res) => {
-  res.render('operator/users');
-});
+operatorRoutes.get('/users', ShowUsersController.index);
 
 operatorRoutes.get('/users/edit', (req, res) => {
   const randomDate = new Date(faker.date.past());

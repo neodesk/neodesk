@@ -6,9 +6,10 @@ module.exports = {
       {
         name: 'TI',
         description: 'Tickets related to Computing',
-        subcategories_id: 1,
-        subcategories_categories_id: 1,
-        subcategories_categories_departments_id: 1,
+        
+        // subcategories_id: 1,
+        // subcategories_categories_id: 1,
+        // subcategories_categories_departments_id: 1,
       },
     ]);
     await queryInterface.bulkInsert('service_level_agreements', [

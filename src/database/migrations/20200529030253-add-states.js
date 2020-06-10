@@ -5,7 +5,7 @@ module.exports = {
     return Promise.all([
       queryInterface.addColumn('states', 'capital_city_id', {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
           model: 'cities',
           key: 'id',
