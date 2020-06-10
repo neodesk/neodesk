@@ -7,10 +7,8 @@
     </div>
 
     <div class="y_overflow_list users">
-      <% Array(5).fill().forEach((num) => { %>
-
-        <%- include("./_user_row.ejs")%>
-
+      <% users.forEach((user) => { %>
+      <%- include("./_user_row", {user:user}) %>
       <% }) %>
     </div>
   </div>

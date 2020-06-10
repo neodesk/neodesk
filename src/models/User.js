@@ -24,15 +24,15 @@ export default class User extends Model {
   static async associate(models) {
     await this.belongsTo(models.Address, {
       foreignKey: 'address_id',
-      as: 'operator_address',
+      as: 'user_address',
     });
     await this.belongsTo(models.Organization, {
       foreignKey: 'organization_id',
-      as: 'operator_organization',
+      as: 'user_organization',
     });
     await this.belongsTo(models.Job, {
       foreignKey: 'job_id',
-      as: 'operator_job',
+      as: 'user_job',
     });
   }
 }

@@ -7,9 +7,9 @@
     </div>
 
     <div class="y_overflow_list users">
-      <% Array(5).fill().forEach((num) => { %>
+      <% operators.forEach((operator) => { %>
 
-        <%- include("./_user_row.ejs")%>
+        <%- include("./_operator_row.ejs", {operator:operator})%>
 
       <% }) %>
     </div>

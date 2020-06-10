@@ -4,18 +4,18 @@
 
     <div class="user_description">
       <div class="user_description_column">
-      <a href="/operator/users/edit"><%= user.first_name + ' ' + user.last_name %></a>
-        <span><%= user.user_organization.name %></span>
+      <a href="/operator/users/edit"><%= operator.first_name + ' ' + operator.last_name %></a>
+        <span><%= operator.operator_organization.name %></span>
       </div>
 
       <div class="user_description_column">
-        <span><%= user.email %></span>
-        <span><%= user.cellphone_number %></span>
+        <span><%= operator.email %></span>
+        <span><%= operator.cellphone_number %></span>
       </div>
 
       <div class="user_description_column">
-        <span><%= user.user_job.name %></span>
-        <span><%= user.user_job.seniority %></span>
+        <span><%= operator.operator_job.name %></span>
+        <span><%= operator.operator_job.seniority %></span>
       </div>
     </div>
   </div>
