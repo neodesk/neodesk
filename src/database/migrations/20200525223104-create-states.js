@@ -15,10 +15,6 @@ module.exports = {
       },
       letter_code: {
         type: Sequelize.STRING(3),
-
-      },
-      calling_code: {
-        type: Sequelize.STRING(4),
       },
       created_at: {
         type: Sequelize.DATE,

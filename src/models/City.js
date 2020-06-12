@@ -9,6 +9,7 @@ export default class City extends Model {
       name: DataTypes.STRING,
       latitude: DataTypes.FLOAT,
       latitude: DataTypes.FLOAT,
+      calling_code: DataTypes.STRING,
     }, {
       sequelize,
       tablename: 'cities',

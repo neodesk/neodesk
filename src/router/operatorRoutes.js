@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import faker from 'faker';
-import ShowUsersController from '../controllers/ShowUsersController';
+import UserController from '../controllers/UserController';
 
 const operatorRoutes = Router();
 
@@ -18,29 +18,33 @@ operatorRoutes.get('/tickets/show', (req, res) => {
   res.render('operator/show_ticket', { ticketTitle });
 });
 
-operatorRoutes.get('/users', ShowUsersController.index);
+operatorRoutes.get('/users', UserController.index);
 
-operatorRoutes.get('/users/edit', (req, res) => {
-  const randomDate = new Date(faker.date.past());
+operatorRoutes.get('/users/edit/:id', UserController.show);
 
-  const dateYear = randomDate.getFullYear();
-  const dateMonthRaw = randomDate.getMonth() + 1;
+// (req, res) => {
+//   const randomDate = new Date(faker.date.past());
 
-  const dateMonth =
-    Number(dateMonthRaw) < 10 ? '0' + dateMonthRaw : dateMonthRaw;
-  const dateDayRaw = randomDate.getDate();
+//   const dateYear = randomDate.getFullYear();
+//   const dateMonthRaw = randomDate.getMonth() + 1;
 
-  const dateDay = Number(dateDayRaw) < 10 ? '0' + dateDayRaw : dateDayRaw;
-  const dateString = `${dateYear}-${dateMonth}-${dateDay}`;
+//   const dateMonth =
+//     Number(dateMonthRaw) < 10 ? '0' + dateMonthRaw : dateMonthRaw;
+//   const dateDayRaw = randomDate.getDate();
 
-  const user = {
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
-    dateString,
-  };
+//   const dateDay = Number(dateDayRaw) < 10 ? '0' + dateDayRaw : dateDayRaw;
+//   const dateString = `${dateYear}-${dateMonth}-${dateDay}`;
 
-  res.render('operator/edit_user', user);
-});
+//   const user = {
+//     firstName: faker.name.firstName(),
+//     lastName: faker.name.lastName(),
+//     dateString,
+//   };
+
+//   res.render('operator/edit_user', user);
+// }
+// );
+operatorRoutes.delete('/users/edit/:id/delete')
 
 operatorRoutes.get('/kanban', (req, res) => {
   res.render('operator/kanban');

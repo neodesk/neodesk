@@ -2,6 +2,7 @@ import User from '../models/User';
 import Operator from '../models/Operator'
 import Job from '../models/Job'
 import Organization from '../models/Organization'
+import Address from '../models/Address'
 
 export default {
   index: async (req, res) => {
@@ -10,7 +11,7 @@ export default {
         model: Job,
         as: 'user_job',
         require: true
-      },{
+      }, {
         model: Organization,
         as: 'user_organization',
         required: true
@@ -21,7 +22,7 @@ export default {
         model: Job,
         as: 'operator_job',
         require: true
-      },{
+      }, {
         model: Organization,
         as: 'operator_organization',
         required: true
@@ -32,4 +33,29 @@ export default {
       operators: operators
     });
   },
+  show: async (req, res) => {
+    let {
+      id
+    } = req.params;
+    let user = await User.findOne({
+      where: {
+        id: id
+      },
+      include: [{
+        model: Address,
+        as: 'user_address',
+        require: true,
+      }, {
+        model: Organization,
+        as: 'user_organization',
+        require: true,
+      }, {
+        model: Job,
+        as: 'user_job',
+        require: true,
+      }]
+    });
+    console.log(user.first_name)
+    res.render('operator/edit_user', {user});
+  }
 }

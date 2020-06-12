@@ -8,7 +8,6 @@ export default class State extends Model {
     super.init({
       name: DataTypes.STRING,
       letter_code: DataTypes.STRING,
-      calling_code: DataTypes.STRING,
     }, {
       sequelize,
       tablename: 'states',

@@ -9,7 +9,14 @@ module.exports = {
       seniority: 'IT',
       created_at: new Date(),
       updated_at: new Date(),
-    }, ]);
+    }, {
+      name: 'Front-end Developer	',
+      description: 'A front-end developer links together the world of design and technology, packaging up the utility of the back end in an inviting way for users to interact with. They take website design files and convert them into HTML, JavaScript (JS) and/or CSS code.',
+      department: 'Developer',
+      seniority: 'IT',
+      created_at: new Date(),
+      updated_at: new Date(),
+    }]);
     await queryInterface.bulkInsert('organizations', [{
       name: 'NeoDesk',
       description: 'Ticket and incident management system - Santander Coders Integrator Project - Digital House, São Paulo',
@@ -17,7 +24,14 @@ module.exports = {
       created_at: new Date(),
       updated_at: new Date(),
       address_id: '1'
-    }, ]);
+    }, {
+      name: 'Digital House',
+      description: 'Education startup offering courses for the training of digital professionals',
+      type: 'Education Startup',
+      created_at: new Date(),
+      updated_at: new Date(),
+      address_id: '2'
+    }]);
     await queryInterface.bulkInsert('commercial_contacts', [{
       primary_email: 'neodesk@neodesk.com',
       landline_number: '(11) 0000-0000',

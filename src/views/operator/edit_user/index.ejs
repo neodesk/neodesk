@@ -11,7 +11,7 @@ include("../_sidenav.ejs")%>
     <%- include("../../shared/_path.ejs", { crumbs: [ 
       { path: '/operator', name:'Home' },
       { path: '/operator/users', name:'Usuários' },
-      { path: '/operator/users/edit', name: `${firstName} ${lastName}` },
+      { path: '/operator/users/edit', name: `${user.first_name} ${user.last_name}` },
     ] })%>
   </nav>
 

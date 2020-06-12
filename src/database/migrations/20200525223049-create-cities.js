@@ -20,6 +20,9 @@ module.exports = {
       longitude: {
         type: Sequelize.FLOAT
       },
+      calling_code: {
+        type: Sequelize.STRING(4),
+      },
       created_at: {
         type: Sequelize.DATE,
       },
