@@ -10,7 +10,7 @@ main {
   text-align: center;
   letter-spacing: 0.03em;
 
-  min-height: 100vh;
+  min-height: calc(100vh - 55px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +51,15 @@ a {
   font-size: 1.25rem;
 }
 
-#link-operador {
+.unselected {
+  color: var(--clr-white);
+}
+
+.selected{
+  color: var(--clr-primary);
+}
+.selected:hover{
+  text-decoration: none;
   color: var(--clr-primary);
 }
 
@@ -97,7 +105,7 @@ button#submit_login {
 }
 
 button#submit_login:hover {
-  color: var(--clr-primary);
+  color: var(--clr-primary-light);
 }
 
 .form-control:focus {
@@ -116,4 +124,9 @@ button#submit_login:hover {
 
 .password-recovery:hover {
   font-weight: 700;
+}
+
+.alert_login p {
+  font-size: 14px;
+  color: var(--clr-danger);
 }

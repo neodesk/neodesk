@@ -55,7 +55,9 @@ export default {
         require: true,
       }]
     });
-    console.log(user.first_name)
     res.render('operator/edit_user', {user});
+  },
+  create: (req,res) => {
+    res.render('operator/create_user')
   }
 }

@@ -4,7 +4,7 @@
 
     <div class="user_description">
       <div class="user_description_column">
-      <a href="/operator/users/edit/<%= operator.id %>"><%= operator.first_name + ' ' + operator.last_name %></a>
+      <a href="/operator/users/edit/op/<%= operator.id %>"><%= operator.first_name + ' ' + operator.last_name %></a>
         <span><%= operator.operator_organization.name %></span>
       </div>
 
@@ -21,7 +21,7 @@
   </div>
 
   <div class="actions">
-    <a href="/operator/users/edit/<%= operator.id %>"><i class="material-icons md-36">edit</i></a>
+    <a href="/operator/users/edit/op/<%= operator.id %>"><i class="material-icons md-36">edit</i></a>
     <i class="material-icons md-36 md-danger">delete</i>
   </div>
 </div>

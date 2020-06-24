@@ -1,0 +1,35 @@
+<div class="col-12">
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Grupos de Operadores</h4>
+
+        <div class="form_panel_title_bar_icons">
+          <i class="material-icons md-36 md-primary-light"
+            >remove_circle_outline</i
+          >
+          <i class="material-icons md-36 md-primary-light"
+            >add_circle_outline</i
+          >
+
+          <button type="submit" class="form_panel_save">
+            <i class="material-icons md-36 md-primary-light">save</i>
+          </button>
+        </div>
+      </div>
+
+      <div class="inclusion_list">
+        <% Array(10).fill().forEach((num) => { %>
+
+        <div class="inclusion_list_row">
+          <span class="inclusion_list_item_name">
+            <%= faker.name.jobArea() %>
+          </span>
+        </div>
+
+        <% }) %>
+
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,48 @@
+<div class="col-12">
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Geral</h4>
+
+        <button type="submit" class="form_panel_save">
+          <i class="material-icons md-36 md-primary-light">save</i>
+        </button>
+      </div>
+
+      <div class="row p-0 m-0 mx-2">
+        <%- include("./identity_inputs/_avatar")%>
+
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_first_name")%>
+
+          <%- include("./identity_inputs/_username")%>
+
+          <%- include("./identity_inputs/_language")%>
+        </div>
+
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_last_name")%>
+          
+          <%- include("./identity_inputs/_email")%>
+          
+          <%- include("./identity_inputs/_date_of_birth")%>
+        </div>
+      </div>
+
+      <div class="row p-0 m-0 mx-2">
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_job_title")%>
+
+          <%- include("./identity_inputs/_department")%>
+        </div>
+
+        <div class="col px-1 py-0 m-1">
+          <%- include("./identity_inputs/_job_description")%>
+          
+          <%- include("./identity_inputs/_company")%>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>

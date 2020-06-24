@@ -1,0 +1,29 @@
+<div class="col-12">
+  <form action="#" method="post" class="p-0 m-0">
+    <div class="form_panel">
+      <div class="form_panel_title_bar">
+        <h4 class="form_panel_title">Contato</h4>
+
+        <button type="submit" class="form_panel_save">
+          <i class="material-icons md-36 md-primary-light">save</i>
+        </button>
+      </div>
+
+      <div class="row p-0 m-0 mx-2">
+        <div class="col px-1 py-0 m-1">
+          <%- include("./contact_inputs/_personal_email")%>
+
+          <%-include("./contact_inputs/_landline")%>
+        </div>
+
+        <div class="col px-1 py-0 m-1">
+          <%- include("./contact_inputs/_website")%>
+          
+          <%- include("./contact_inputs/_cellphone")%>
+        </div>
+      </div>
+
+    </div>
+  </form>
+</div>
+

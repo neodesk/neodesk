@@ -1,11 +1,12 @@
 import { Router } from 'express';
 
 import TicketController from '../controllers/TicketController';
+import auth from '../middlewares/auth';
 
 const userRoutes = Router();
 
-userRoutes.get('/', (req, res) => {
-  res.render('user/home');
+userRoutes.get('/', auth, (req, res) => {
+  res.render('user/home', {user : req.session.user});
 });
 
 userRoutes.get('/category', (req, res) => {

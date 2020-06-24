@@ -10,7 +10,7 @@
       <div class="col-3 p-2">
         <img
           class="img-fluid rounded"
-          src="/img/random_avatars/17.jpg"
+          src="/img/avatars/default_avatar.png"
           alt="operator"
         />
       </div>
@@ -18,9 +18,9 @@
       <div class="col-9 p-2">
         <div class="operator_info_head">
           <div class="operator_info_title">
-            <a href="/operator/users/edit" class="operator_info_name">Clara Oliveira</a>
+            <a href="/operator/users/edit" class="operator_info_name"> <%= operator.first_name + ' ' + operator.last_name %>  </a>
 
-            <span class="operator_info_description">Junior Developer</span>
+            <span class="operator_info_description"> <%= operator.operator_job.name %>  </span>
           </div>
 
           <div class="operator_info_stats">
@@ -56,9 +56,7 @@
         </div>
 
         <div class="four_line_text">
-          Desenvolvedor web, com conhecimentos em NodeJs, atua no backend da
-          aplicacao desenvolvendo solucoes para o sistema
-          <%= faker.lorem.paragraphs() %>
+          <%= operator.operator_job.description %>
         </div>
       </div>
     </div>

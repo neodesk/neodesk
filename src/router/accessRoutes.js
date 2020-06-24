@@ -1,4 +1,6 @@
 import { Router } from 'express';
+import AccessController from '../controllers/AccessController';
+import auth from '../middlewares/auth';
 
 const accessRoutes = Router();
 
@@ -6,9 +8,9 @@ accessRoutes.get('/', (req, res) => {
   res.render('root');
 });
 
-accessRoutes.get('/login', (req, res) => {
-  res.render('access/login');
-});
+accessRoutes.get('/login', AccessController.index);
+accessRoutes.post('/login', AccessController.show);
+accessRoutes.get('/logout', auth, AccessController.destroy)
 
 accessRoutes.get('/password_reset', (req, res) => {
   res.render('access/password_reset');

@@ -10,12 +10,15 @@
     </a>
 
     <div class="switch">
-      <a href="/login" id="link-usuario">Login de usuário</a>
+      <a href="#" class ="unselected" id="link-usuario" onclick="link_usuario()">Login de usuário</a>
       |
-      <a href="/login" id="link-operador">Login de operador</a>
+      <a href="#" class="selected" id="link-operador" onclick="link_operador()">Login de operador</a>
     </div>
 
     <br />
+    <% if( typeof msg !== 'undefined') { %>
+      <div class="alert_login"><p><%= msg %> </p></div>
+    <% } %>
 
     <form action="" method="POST" class="login-form">
       <label for="login" class="login_form_label">Login</label>
@@ -23,18 +26,28 @@
         type="text"
         id="login"
         name="login"
-        placeholder="Usuario ou email"
+        placeholder="Digite seu e-mail"
         class="form-control"
         required
       />
-
+      
       <label for="senha" class="login_form_label">Senha</label>
       <input
         type="password"
         id="senha"
         name="senha"
-        placeholder="Sua senha secreta"
+        placeholder="Digite sua senha"
         class="form-control"
+        required
+      />
+
+      <input
+        type="text"
+        id="type_user"
+        name="type_user"
+        class="form-control"
+        value="1"
+        hidden
         required
       />
 
@@ -48,3 +61,25 @@
 </main>
 
 <link rel="stylesheet" href="/css/access/styles.css" type="text/css" />
+
+<script>
+  let usuario_label = document.querySelector("#link-usuario")
+  let operador_label = document.querySelector("#link-operador")
+
+  function link_operador(){
+    event.preventDefault()
+    operador_label.classList.add("selected")
+    operador_label.classList.remove("unselected")
+    usuario_label.classList.add("unselected")
+    usuario_label.classList.remove("selected")
+    document.getElementById("type_user").value="1"
+  }
+  function link_usuario(){
+    event.preventDefault()
+    usuario_label.classList.add("selected")
+    usuario_label.classList.remove("unselected")
+    operador_label.classList.add("unselected")
+    operador_label.classList.remove("selected")
+    document.getElementById("type_user").value="0"
+  }
+</script>
