@@ -5,6 +5,7 @@ import Job from '../models/Job'
 
 export default {
   index: async (req, res) => {
+    // req.session.destroy()
     return res.render('access/login');
   },
   show: async (req, res) => {
@@ -14,8 +15,9 @@ export default {
       type_user
     } = req.body;
     if (type_user === "0") {
+      var logged = req.session.user
       try {
-        var logged = await User.findOne({
+        logged = await User.findOne({
           where: {
             email: login,
           }
@@ -32,8 +34,9 @@ export default {
         return res.redirect("/user")
       }
     } else if (type_user === "1") {
+      var logged = req.session.operator
       try {
-        var logged = await Operator.findOne({
+        logged = await Operator.findOne({
           where: {
             email: login,
           },
